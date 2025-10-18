@@ -17,3 +17,9 @@ classifiers = [
 
 [project.scripts]
 medieval-generator = "medieval_generator:main"
+
+[tool.setuptools]
+packages = { find = { where = ["src"] } }
+
+[tool.setuptools."package-dir"]
+"" = "src"
