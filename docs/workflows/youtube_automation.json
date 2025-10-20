@@ -1,0 +1,561 @@
+{
+  "name": "Medieval YouTube Automation",
+  "nodes": [
+    {
+      "parameters": {
+        "triggerTimes": {
+          "item": [
+            {
+              "mode": "everyDay",
+              "hour": 9,
+              "minute": 0
+            }
+          ]
+        }
+      },
+      "id": "1",
+      "name": "Daily Trigger",
+      "type": "n8n-nodes-base.cron",
+      "typeVersion": 1,
+      "position": [
+        -800,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "timezone",
+              "value": "Europe/Istanbul"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "2",
+      "name": "Workflow Settings",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 2,
+      "position": [
+        -620,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "chat",
+        "model": "gpt-4o-mini",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are an AI producer who plans viral medieval-themed YouTube videos. Always reply with valid JSON only."
+          },
+          {
+            "role": "user",
+            "content": "Produce a JSON object with keys theme, title, hook, script_words, ideas_count, image_prompts, summary. theme should be in Turkish medieval style, title must be an exciting Turkish YouTube title, hook is a 2 sentence summary, script_words 20000, ideas_count 20, image_prompts 24."
+          }
+        ],
+        "options": {
+          "responseFormat": "json_object",
+          "temperature": 0.6
+        }
+      },
+      "id": "3",
+      "name": "Topic Planner",
+      "type": "n8n-nodes-base.openAi",
+      "typeVersion": 3,
+      "position": [
+        -420,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "functionCode": "const raw = item.json || {}\nconst content = raw.choices?.[0]?.message?.content || raw.data?.[0]?.choices?.[0]?.message?.content || raw.message?.content || raw.result || raw.text || '{}';\nlet parsed;\ntry {\n  parsed = JSON.parse(content);\n} catch (error) {\n  throw new Error('Topic Planner did not return valid JSON: ' + content);\n}\nconst now = new Date();\nconst slug = parsed.title\n  ? parsed.title\n      .toLowerCase()\n      .replace(/[^a-z0-9]+/g, '-')\n      .replace(/(^-|-$)/g, '')\n  : `project-${now.getTime()}`;\nreturn [{\n  json: {\n    topic: {\n      theme: parsed.theme,\n      title: parsed.title,\n      hook: parsed.hook,\n      summary: parsed.summary,\n      script_words: parsed.script_words || 20000,\n      ideas_count: parsed.ideas_count || 20,\n      image_prompts: parsed.image_prompts || 24\n    },\n    meta: {\n      requested_at: now.toISOString(),\n      slug\n    }\n  }\n}];"
+      },
+      "id": "4",
+      "name": "Parse Topic",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [
+        -220,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "command": "python3 - <<'PY'\nimport json, subprocess\n\ncmd = [\n    'medieval-generator',\n    {{ JSON.stringify($json.topic.theme) }},\n    {{ JSON.stringify($json.topic.title) }},\n    '--script-words', str({{ $json.topic.script_words }}),\n    '--ideas-count', str({{ $json.topic.ideas_count }}),\n    '--image-prompts', str({{ $json.topic.image_prompts }})\n]\noutput = subprocess.check_output(cmd, text=True)\npayload = json.loads(output)\nresult = {\n    'topic': json.loads(\"""{{ JSON.stringify($json.topic) }}\"""),\n    'meta': json.loads(\"""{{ JSON.stringify($json.meta) }}\"""),\n    'payload': payload\n}\nprint(json.dumps(result, ensure_ascii=False))\nPY",
+        "options": {
+          "shell": "bash",
+          "passThrough": true
+        }
+      },
+      "id": "5",
+      "name": "Generate Assets",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        -20,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "functionCode": "const stdout = item.json?.stdout || item.json?.data || '';\nlet parsed;\ntry {\n  parsed = typeof stdout === 'string' ? JSON.parse(stdout) : stdout;\n} catch (error) {\n  throw new Error('Generator output was not valid JSON: ' + stdout);\n}\nreturn [{ json: parsed }];"
+      },
+      "id": "6",
+      "name": "Parse Generator Output",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [
+        180,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "functionCode": "const payload = item.json.payload;\nconst slug = item.json.meta.slug;\nconst summaryLines = [\n  `Başlık: ${item.json.topic.title}`,\n  `Tema: ${item.json.topic.theme}`,\n  '',\n  'Öne Çıkan Fikirler:',\n  ...payload.ideas.map((idea, index) => `${index + 1}. ${idea}`),\n  '',\n  'Manuel Adımlar:',\n  '- Seslendirme kaydı yapın (hook kullanarak açılışı vurgulayın).',\n  '- Görselleri Video Projesi klasörüne aktarın ve düzenleyin.',\n  '- Betiği seslendirme ile eşleştirip videoyu kurgulayın.',\n  '- Final videoyu dışa aktararak Google Drive > Final_Videos klasörüne yükleyin.',\n  '',\n  'Ek Not:',\n  item.json.topic.summary || '---'\n];\nconst checklist = summaryLines.join('\n');\nconst buffer = Buffer.from(checklist, 'utf-8');\nreturn [{\n  json: item.json,\n  binary: {\n    checklist: await this.helpers.prepareBinaryData(buffer, `${slug}-checklist.md`, 'text/markdown')\n  }\n}];"
+      },
+      "id": "7",
+      "name": "Create Checklist",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [
+        380,
+        -180
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "upload",
+        "binaryPropertyName": "checklist",
+        "parentId": "={{ $env('N8N_GDRIVE_PROJECTS_FOLDER') }}"
+      },
+      "id": "8",
+      "name": "Upload Checklist",
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 4,
+      "position": [
+        580,
+        -180
+      ],
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "{{ $env('N8N_GOOGLE_DRIVE_CREDENTIAL_ID') }}",
+          "name": "Google Drive"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "functionCode": "const payload = item.json.payload;\nconst slug = item.json.meta.slug;\nconst scriptJson = JSON.stringify(payload, null, 2);\nreturn [{\n  json: item.json,\n  binary: {\n    script: await this.helpers.prepareBinaryData(Buffer.from(scriptJson, 'utf-8'), `${slug}-script.json`, 'application/json')\n  }\n}];"
+      },
+      "id": "9",
+      "name": "Prepare Script JSON",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [
+        380,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "upload",
+        "binaryPropertyName": "script",
+        "parentId": "={{ $env('N8N_GDRIVE_SCRIPTS_FOLDER') }}"
+      },
+      "id": "10",
+      "name": "Upload Script",
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 4,
+      "position": [
+        580,
+        0
+      ],
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "{{ $env('N8N_GOOGLE_DRIVE_CREDENTIAL_ID') }}",
+          "name": "Google Drive"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "functionCode": "const prompts = item.json.payload.image_prompts || [];\nreturn prompts.map((prompt, index) => ({\n  json: {\n    prompt,\n    index: index + 1,\n    topic: item.json.topic,\n    meta: item.json.meta\n  }\n}));"
+      },
+      "id": "11",
+      "name": "Prepare Image Prompts",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [
+        380,
+        200
+      ]
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "12",
+      "name": "Split Image Batches",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 1,
+      "position": [
+        580,
+        200
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "image",
+        "model": "gpt-image-1",
+        "prompt": "Create a vibrant medieval illustration based on the following instructions:\n{{$json.prompt}}",
+        "size": "1024x1024"
+      },
+      "id": "13",
+      "name": "Render Scene",
+      "type": "n8n-nodes-base.openAi",
+      "typeVersion": 3,
+      "position": [
+        780,
+        200
+      ]
+    },
+    {
+      "parameters": {
+        "functionCode": "const data = item.json.data?.[0] || item.json.output?.data?.[0];\nconst base64 = data?.b64_json || data?.b64Json;\nif (!base64) {\n  throw new Error('OpenAI image node did not return base64 data.');\n}\nconst buffer = Buffer.from(base64, 'base64');\nconst slug = item.json.meta.slug;\nconst index = String(item.json.index).padStart(2, '0');\nitem.binary = {\n  image: await this.helpers.prepareBinaryData(buffer, `${slug}-scene-${index}.png`, 'image/png')\n};\nreturn item;"
+      },
+      "id": "14",
+      "name": "Prepare Scene Binary",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [
+        980,
+        200
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "upload",
+        "binaryPropertyName": "image",
+        "parentId": "={{ $env('N8N_GDRIVE_IMAGES_FOLDER') }}"
+      },
+      "id": "15",
+      "name": "Upload Scene",
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 4,
+      "position": [
+        1180,
+        200
+      ],
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "{{ $env('N8N_GOOGLE_DRIVE_CREDENTIAL_ID') }}",
+          "name": "Google Drive"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "functionCode": "if (items.length === 0) {\n  return items;\n}\nreturn [{ json: items[0].json }];"
+      },
+      "id": "16",
+      "name": "Return to Loop",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [
+        1380,
+        200
+      ]
+    },
+    {
+      "parameters": {
+        "functionCode": "const prompt = item.json.payload.thumbnail_prompt;\nreturn [{\n  json: {\n    prompt,\n    topic: item.json.topic,\n    meta: item.json.meta\n  }\n}];"
+      },
+      "id": "17",
+      "name": "Prepare Thumbnail Prompt",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [
+        380,
+        400
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "image",
+        "model": "gpt-image-1",
+        "prompt": "High-energy medieval YouTube thumbnail illustration:\n{{$json.prompt}}",
+        "size": "1024x1024"
+      },
+      "id": "18",
+      "name": "Render Thumbnail",
+      "type": "n8n-nodes-base.openAi",
+      "typeVersion": 3,
+      "position": [
+        580,
+        400
+      ]
+    },
+    {
+      "parameters": {
+        "functionCode": "const data = item.json.data?.[0] || item.json.output?.data?.[0];\nconst base64 = data?.b64_json || data?.b64Json;\nif (!base64) {\n  throw new Error('Thumbnail image was not returned as base64.');\n}\nconst buffer = Buffer.from(base64, 'base64');\nconst slug = item.json.meta.slug;\nitem.binary = {\n  thumbnail: await this.helpers.prepareBinaryData(buffer, `${slug}-thumbnail.png`, 'image/png')\n};\nreturn item;"
+      },
+      "id": "19",
+      "name": "Prepare Thumbnail Binary",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [
+        780,
+        400
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "upload",
+        "binaryPropertyName": "thumbnail",
+        "parentId": "={{ $env('N8N_GDRIVE_THUMBNAILS_FOLDER') }}"
+      },
+      "id": "20",
+      "name": "Upload Thumbnail",
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 4,
+      "position": [
+        980,
+        400
+      ],
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "{{ $env('N8N_GOOGLE_DRIVE_CREDENTIAL_ID') }}",
+          "name": "Google Drive"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Daily Trigger": {
+      "main": [
+        [
+          {
+            "node": "Workflow Settings",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Workflow Settings": {
+      "main": [
+        [
+          {
+            "node": "Topic Planner",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Topic Planner": {
+      "main": [
+        [
+          {
+            "node": "Parse Topic",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Topic": {
+      "main": [
+        [
+          {
+            "node": "Generate Assets",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate Assets": {
+      "main": [
+        [
+          {
+            "node": "Parse Generator Output",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Generator Output": {
+      "main": [
+        [
+          {
+            "node": "Create Checklist",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Prepare Script JSON",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Prepare Image Prompts",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Prepare Thumbnail Prompt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create Checklist": {
+      "main": [
+        [
+          {
+            "node": "Upload Checklist",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Prepare Script JSON": {
+      "main": [
+        [
+          {
+            "node": "Upload Script",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Prepare Image Prompts": {
+      "main": [
+        [
+          {
+            "node": "Split Image Batches",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Image Batches": {
+      "main": [
+        [
+          {
+            "node": "Render Scene",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Return to Loop",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Render Scene": {
+      "main": [
+        [
+          {
+            "node": "Prepare Scene Binary",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Prepare Scene Binary": {
+      "main": [
+        [
+          {
+            "node": "Upload Scene",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Upload Scene": {
+      "main": [
+        [
+          {
+            "node": "Return to Loop",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Return to Loop": {
+      "main": [
+        [
+          {
+            "node": "Split Image Batches",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Prepare Thumbnail Prompt": {
+      "main": [
+        [
+          {
+            "node": "Render Thumbnail",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Render Thumbnail": {
+      "main": [
+        [
+          {
+            "node": "Prepare Thumbnail Binary",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Prepare Thumbnail Binary": {
+      "main": [
+        [
+          {
+            "node": "Upload Thumbnail",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {},
+  "versionId": "00000000-0000-0000-0000-000000000000"
+}
