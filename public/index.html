@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Buyume Asistani - @hillmotivasyon</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h1>YT Growth</h1>
+      <p>@hillmotivasyon</p>
+    </div>
+    <ul class="nav-menu">
+      <li class="nav-item active" data-page="dashboard">
+        <span class="nav-icon">&#9776;</span> Dashboard
+      </li>
+      <li class="nav-item" data-page="trends">
+        <span class="nav-icon">&#9650;</span> Trendler
+      </li>
+      <li class="nav-item" data-page="ideas">
+        <span class="nav-icon">&#9733;</span> Video Fikirleri
+      </li>
+      <li class="nav-item" data-page="discover">
+        <span class="nav-icon">&#128269;</span> Kanal Kesfi
+      </li>
+      <li class="nav-item" data-page="my-channel">
+        <span class="nav-icon">&#9881;</span> Kanalim
+      </li>
+    </ul>
+    <div class="sidebar-footer">
+      <div id="quota-info" class="quota-bar">
+        <span>API Kotasi: -</span>
+        <div class="quota-progress"><div class="quota-fill" style="width:0%"></div></div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="content">
+    <!-- DASHBOARD -->
+    <section id="page-dashboard" class="page active">
+      <h2>Dashboard</h2>
+      <div class="stats-grid" id="dashboard-stats">
+        <div class="stat-card">
+          <div class="stat-number" id="stat-channels">-</div>
+          <div class="stat-label">Takip Edilen Kanal</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" id="stat-videos">-</div>
+          <div class="stat-label">Analiz Edilen Video</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" id="stat-ideas">-</div>
+          <div class="stat-label">Video Fikri</div>
+        </div>
+        <div class="stat-card highlight">
+          <div class="stat-number" id="stat-new-ideas">-</div>
+          <div class="stat-label">Yeni Fikir</div>
+        </div>
+      </div>
+
+      <div class="dashboard-grid">
+        <div class="card">
+          <h3>En Cok Trend Videolar</h3>
+          <div id="dashboard-trending" class="video-list">
+            <p class="empty-state">Henuz veri yok. Once trend toplama yapin.</p>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Son Video Fikirleri</h3>
+          <div id="dashboard-ideas" class="idea-list">
+            <p class="empty-state">Henuz fikir uretilmedi.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="quick-actions">
+        <h3>Hizli Islemler</h3>
+        <div class="action-buttons">
+          <button class="btn btn-primary" onclick="app.setupChannel()">Kanalimi Kur</button>
+          <button class="btn btn-success" onclick="app.collectTrends()">Trend Topla</button>
+          <button class="btn btn-warning" onclick="app.generateIdeas('trends')">Fikir Uret</button>
+          <button class="btn btn-info" onclick="app.discoverChannels()">Kanal Kesfet</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRENDLER -->
+    <section id="page-trends" class="page">
+      <div class="page-header">
+        <h2>Trend Analizi</h2>
+        <div class="page-actions">
+          <button class="btn btn-primary" onclick="app.collectTrends()">Trend Topla</button>
+          <select id="trend-filter" onchange="app.loadTrends()">
+            <option value="top">En Yuksek Skor</option>
+            <option value="fastest">En Hizli Buyuyen</option>
+          </select>
+        </div>
+      </div>
+      <div id="trends-list" class="video-grid">
+        <p class="empty-state">Henuz trend verisi yok. "Trend Topla" butonuna basin.</p>
+      </div>
+    </section>
+
+    <!-- VIDEO FIKIRLERI -->
+    <section id="page-ideas" class="page">
+      <div class="page-header">
+        <h2>Video Fikirleri</h2>
+        <div class="page-actions">
+          <button class="btn btn-warning" onclick="app.generateIdeas('trends')">Trendlerden Uret</button>
+          <button class="btn btn-success" onclick="app.generateIdeas('my-videos')">Videolarimdan Uret</button>
+          <button class="btn btn-info" onclick="app.generateIdeas('competitors')">Rakiplerden Uret</button>
+          <select id="idea-filter" onchange="app.loadIdeas()">
+            <option value="">Tumunu Goster</option>
+            <option value="new">Yeni</option>
+            <option value="saved">Kaydedilen</option>
+            <option value="planned">Planlanan</option>
+            <option value="done">Tamamlanan</option>
+          </select>
+        </div>
+      </div>
+      <div id="ideas-list" class="idea-grid">
+        <p class="empty-state">Henuz video fikri uretilmedi.</p>
+      </div>
+    </section>
+
+    <!-- KANAL KESFI -->
+    <section id="page-discover" class="page">
+      <div class="page-header">
+        <h2>Kanal Kesfi</h2>
+        <div class="page-actions">
+          <button class="btn btn-primary" onclick="app.discoverChannels()">Yeni Kanal Kesfet</button>
+          <button class="btn btn-success" onclick="app.findSimilar()">Benzer Kanal Bul</button>
+          <button class="btn btn-warning" onclick="app.analyzeCompetitors()">Rakipleri Analiz Et</button>
+        </div>
+      </div>
+
+      <div class="tabs">
+        <button class="tab active" data-tab="all-channels" onclick="app.switchTab(this, 'discover')">Tum Kanallar</button>
+        <button class="tab" data-tab="competitors" onclick="app.switchTab(this, 'discover')">Rakipler</button>
+      </div>
+
+      <div id="discover-all-channels" class="tab-content active">
+        <div id="channels-list" class="channel-grid">
+          <p class="empty-state">Henuz kanal kesfedilmedi.</p>
+        </div>
+      </div>
+      <div id="discover-competitors" class="tab-content">
+        <div id="competitors-list" class="channel-grid">
+          <p class="empty-state">Henuz rakip kanal belirlenmedi.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- KANALIM -->
+    <section id="page-my-channel" class="page">
+      <div class="page-header">
+        <h2>Kanalim - @hillmotivasyon</h2>
+        <button class="btn btn-primary" onclick="app.setupChannel()">Kanal Bilgilerini Guncelle</button>
+      </div>
+      <div id="my-channel-info" class="card">
+        <p class="empty-state">Kanal henuz kurulmadi. "Kanalimi Kur" butonuna basin.</p>
+      </div>
+      <div class="card" style="margin-top:20px">
+        <h3>En Cok Izlenen Videolarim</h3>
+        <div id="my-top-videos" class="video-list">
+          <p class="empty-state">Veriler yukleniyor...</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- LOADING OVERLAY -->
+  <div id="loading" class="loading-overlay" style="display:none">
+    <div class="spinner"></div>
+    <p id="loading-text">Yukleniyor...</p>
+  </div>
+
+  <!-- TOAST -->
+  <div id="toast-container"></div>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
