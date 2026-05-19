@@ -1,0 +1,7 @@
+moviepy==1.0.3
+streamlit==1.35.0
+Pillow==10.3.0
+numpy==1.26.4
+imageio==2.34.1
+imageio-ffmpeg==0.5.1
+tqdm==4.66.4
