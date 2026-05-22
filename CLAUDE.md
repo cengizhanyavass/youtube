@@ -1,10 +1,62 @@
-# claude-obsidian — Claude + Obsidian Wiki Vault
+# YouTube Creator Second Brain — Claude + Obsidian Vault
 
-This folder is both a Claude Code plugin and an Obsidian vault.
+This vault is a Claude Code plugin + Obsidian second brain for YouTube channel production.
 
-**Plugin name:** `claude-obsidian`
-**Skills:** `/wiki`, `/wiki-ingest`, `/wiki-query`, `/wiki-lint`
+**Primary Channel:** BeastTales (historical animal documentary)
+**Plugin name:** `claude-obsidian` + BeastTales production system
 **Vault path:** This directory (open in Obsidian directly)
+
+---
+
+## BeastTales Production System
+
+### Channel Brain (read-only reference — always load before any BT task)
+```
+channels/beasttales/profile.md    ← Channel DNA, voice rules, visual style, criteria
+channels/beasttales/covered.md    ← Published topics — NEVER repeat these
+channels/beasttales/competitors.md ← Competitor tracking
+```
+
+### BeastTales Skills
+
+| Command | What It Does | Files Read | Files Written |
+|---------|-------------|------------|---------------|
+| `/bt-research` | Find 15 new topics | profile + covered | wiki/beasttales/topics/ + index |
+| `/bt-script [topic]` | Write full 13min script | profile + topic card | wiki/beasttales/scripts/ |
+| `/bt-visuals [topic]` | Generate all Midjourney prompts | profile + script | wiki/beasttales/visuals/ |
+| `/bt-thumbnail [topic]` | Generate 3 thumbnail concepts | profile + topic card | wiki/beasttales/thumbnails/ |
+| `/bt-produce [topic]` | Full pipeline: script + visuals + thumbnail | profile + topic card | all 3 above |
+
+### Token Efficiency Rule
+Each BT skill reads a maximum of 3 files (~150 lines). Never load the full wiki for production tasks.
+
+### Production Workflow
+```
+/bt-research              → get 15 scored topics
+/bt-produce [topic-slug]  → full production package
+Upload → update covered.md
+/bt-research              → next batch (never repeats)
+```
+
+### BeastTales Wiki
+```
+wiki/beasttales/index.md      ← Topic bank (auto-updated by research)
+wiki/beasttales/pipeline.md   ← Production tracker
+wiki/beasttales/topics/       ← Individual topic cards
+wiki/beasttales/scripts/      ← Full scripts
+wiki/beasttales/visuals/      ← Midjourney prompt sets
+wiki/beasttales/thumbnails/   ← Thumbnail concepts
+```
+
+### Tools Available
+```
+tools/claude-youtube/   ← Claude Code YouTube growth skill (channel audit, SEO, analytics)
+tools/shortgpt/         ← AI framework for YouTube Shorts automation
+tools/money-printer/    ← YouTube Shorts auto-generator (local AI, free)
+tools/money-printer-v2/ ← Full YouTube automation suite with scheduling
+```
+
+---
 
 ## What This Vault Is For
 
