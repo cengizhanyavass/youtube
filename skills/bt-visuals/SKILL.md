@@ -1,115 +1,193 @@
-# Skill: bt-visuals — BeastTales Midjourney Prompt Generator
+# Skill: bt-visuals — BeastTales Video Görselleri
 
-## Triggers
-- `bt-visuals [topic]` or `/bt-visuals [topic]`
+## Tetikleyiciler (Türkçe / English)
+- `bt-visuals [konu]` veya `/bt-visuals [konu]`
 - "görseller üret [konu]"
-- "generate image prompts for [topic]"
-- "midjourney prompts for [script name]"
+- "sahne promptları [konu]"
+- "generate visuals for [topic]"
+- "midjourney prompts for [topic]"
+- "imagen4 prompts for [topic]"
 
-## Token Efficiency Rule
-Read ONLY:
-1. `channels/beasttales/profile.md` — visual style strings only (last section)
-2. `wiki/beasttales/scripts/[topic-slug]-script.md` — the script
+## Token Kuralı
+Sadece şunları oku:
+1. `channels/beasttales/profile.md` → görsel stil bölümü
+2. `wiki/beasttales/scripts/[konu]-script.md` → senaryo
 
-Extract visual moments from the script. Do NOT read any other files.
+Başka hiçbir dosya okuma.
 
-## Your Role
-You are a Midjourney prompt specialist for BeastTales.
-Every prompt must produce images that look like they belong in a premium natural history book — but with cinematic drama. Think: National Geographic historical illustration meets David Attenborough documentary visual storytelling.
+## Görsel Stil: İki Seçenek
 
-## Visual Style DNA
+### STİL A — "Red Panda / Known By Birds" (Çizgi Roman)
+Dinamik, dramatik, grafik roman hissi. Daha modern, daha güçlü sosyal medya etkisi.
+
+**Temel stil dizisi:**
 ```
-Base style: natural history book illustration, detailed ink engraving,
-editorial illustration style, National Geographic historical art,
-cross-hatching technique, aged parchment warm tones,
-dramatic chiaroscuro lighting, cinematic composition
-```
-
-## Atmosphere Vocabulary
-Pick one per scene based on emotional tone:
-- `burning city at night, ember glow, smoke columns rising`
-- `desert heat shimmer, dust haze, bleached bone light`
-- `frozen tundra, grey sky, snow surface cracked`
-- `plague-ravaged streets, fog, torchlight from windows`
-- `lush agricultural valley, golden hour, before the fall`
-- `storm at sea, crashing waves, dark green water`
-- `dense jungle, dappled light, humid mist`
-- `imperial court interior, candlelight, ornate columns`
-
-## Angle Vocabulary
-- `extreme close-up face, eyes filling frame, direct gaze`
-- `low angle dramatic, animal silhouette against sky`
-- `bird's eye view, army formation below, animal moving through`
-- `over-shoulder of historical figure watching animal`
-- `wide establishing shot, animal tiny against vast landscape`
-- `medium shot, animal interacting with human element`
-
-## Execution Steps
-
-### 1. SCENE EXTRACTION
-Read the script. Identify 12–15 visual moments:
-- 1 for Cold Open (most dramatic)
-- 2 for The World Before
-- 3 for Enter the Animal
-- 4 for The Causal Chain
-- 2 for Point of No Return
-- 1 for Counter-Narrative Reveal
-- 1 for Legacy
-
-### 2. PROMPT CONSTRUCTION
-For each scene:
-
-```
-[SCENE DESCRIPTION: what is happening], 
-[SPECIFIC ANIMAL: exact species name], natural history book illustration,
-detailed ink engraving, editorial illustration style, 
-National Geographic historical art, cross-hatching technique,
-aged parchment warm tones, dramatic chiaroscuro lighting,
-[HISTORICAL SETTING: specific location/era visual element],
-[ATMOSPHERE from vocabulary above],
-[ANGLE from vocabulary above],
-cinematic composition, muted earth tones with accent [COLOR],
-sharp foreground soft background,
-16:9 aspect ratio --ar 16:9 --style raw --v 6
+comic book illustration style, detailed ink linework, graphic novel art,
+dramatic cinematic lighting, warm interior glow vs cold exterior contrast,
+highly detailed background, sharp foreground soft background, 2D illustration,
+dark moody atmosphere, vibrant but controlled color palette
 ```
 
-### 3. COLOR ACCENT GUIDE
-Match accent color to civilization/emotion:
-- Roman: deep crimson (`accent deep crimson`)
-- Egyptian: gold ochre (`accent gold ochre`)
-- Mongol: electric blue (`accent electric blue`)
-- Plague/death themes: sickly yellow-green (`accent cadmium yellow`)
-- Victory/empire: imperial purple (`accent imperial purple`)
-- Nature/ecological: forest deep green (`accent forest green`)
+### STİL B — Doğal Tarih Kitabı (BeastTales Klasik)
+Ansiklopedik, güvenilir, belgesel hissi. Daha yüksek CPM, daha akademik kitle.
 
-## Output Format
+**Temel stil dizisi:**
+```
+natural history book illustration, detailed ink engraving, editorial illustration,
+National Geographic historical art, cross-hatching technique, aged parchment tones,
+dramatic chiaroscuro lighting, cinematic composition, muted earth tones
+```
 
-Save as: `wiki/beasttales/visuals/[topic-slug]-prompts.md`
+---
 
-Format:
+## SAHNE ŞABLONLARI (Genel — Konu Bağımsız)
+
+Her sahne için aşağıdaki şablonlardan birini seç:
+
+### ŞABLON 1 — HAYVAN YAKINI (Soğuk Açılış)
+```
+[HAYVAN] extreme close-up, eyes wide open intense gaze, 
+[STİL A veya B],
+[ATMOSFER] — dramatic storm / heavy rain / burning fire glow / plague fog,
+dark dramatic background, single dramatic light source,
+cinematic composition, 16:9 --ar 16:9 --style raw --v 6
+```
+
+### ŞABLON 2 — HAYVAN + MEDENIYET (Ana Sahne)
+```
+[HAYVAN] in the foreground, [MEDENİYET UNSURU: ruined city / burning harbor / 
+desert fortress / frozen palace / jungle temple] in background,
+[STİL A veya B],
+[ATMOSFER],
+dramatic scale contrast — small animal, vast civilization,
+cinematic wide shot, 16:9 --ar 16:9 --style raw --v 6
+```
+
+### ŞABLON 3 — KALABALIK SAHNE (Nedensellik Zinciri)
+```
+[HAYVAN] swarm / herd / colony moving through [ORTAM],
+[MEDENİYET UNSURU] visible but overwhelmed,
+[STİL A veya B],
+bird's eye view / dramatic overhead angle,
+sense of unstoppable scale and movement,
+16:9 --ar 16:9 --style raw --v 6
+```
+
+### ŞABLON 4 — İNSAN + HAYVAN KARŞILAŞMASI
+```
+[TARİHİ KARAKTER: soldier / emperor / farmer / merchant] facing [HAYVAN],
+[STİL A veya B],
+[ATMOSFER],
+tension and confrontation, dramatic low angle,
+16:9 --ar 16:9 --style raw --v 6
+```
+
+### ŞABLON 5 — HARİTA / YAYILMA (B-Roll)
+```
+illustrated map style, [HAYVAN] movement paths shown as arrows across [MEDENİYET BÖLGESİ],
+parchment texture, ink illustration, cartographic style,
+dramatic color — red for danger zones, gold for trade routes,
+16:9 --ar 16:9 --style raw --v 6
+```
+
+---
+
+## IMAGEN 4 PROMPT ŞABLONLARI
+
+Imagen 4 için flag kullanılmaz — doğal dil yeterli:
+
+### Imagen4 — Hayvan Yakını
+```
+A dramatic close-up of [HAYVAN], eyes intense and piercing, 
+illustrated in [comic book ink linework / natural history engraving] style,
+[ATMOSFER: heavy rain falling around it / fire glow from behind / 
+snow drifting past / fog surrounding],
+dark moody atmosphere, cinematic lighting,
+highly detailed, 16:9 aspect ratio, sharp focus on animal face
+```
+
+### Imagen4 — Epik Geniş Sahne
+```
+A [HAYVAN] in the foreground, [MEDENİYET: Roman city / Egyptian pyramid field / 
+Viking harbor / Mongol steppe / Ottoman palace] visible in the background,
+[comic book graphic novel illustration / natural history book illustration] style,
+dramatic [storm / fire / plague / drought] atmosphere,
+warm vs cold lighting contrast, epic scale, cinematic wide angle, 16:9 ratio
+```
+
+### Imagen4 — Nedensellik Sahne
+```
+Hundreds of [HAYVAN] moving through [ORTAM: city streets / grain fields / 
+harbor docks / mountain pass / desert caravan route],
+illustration style like a graphic novel or historical documentary art,
+dramatic overhead bird's eye view, sense of inevitable unstoppable force,
+dark atmosphere, [MEDENİYET] structures crumbling or overwhelmed, 16:9 ratio
+```
+
+---
+
+## RENK AKSANI REHBERİ
+
+| Medeniyet / Tema | Accent Rengi |
+|------------------|-------------|
+| Roma | `deep crimson red` |
+| Mısır | `gold ochre` |
+| Moğol | `electric blue` |
+| Osmanlı | `deep turquoise` |
+| Viking/Norse | `steel grey blue` |
+| Orta Asya | `warm amber` |
+| Veba/Hastalık | `sickly yellow green` |
+| Savaş/Çöküş | `blood orange` |
+| Doğa/Ekoloji | `deep forest green` |
+
+---
+
+## ÇALIŞTIRMA ADIMLARI
+
+### 1. SENARYO OKUMA
+Senaryoyu oku. 12–15 görsel an belirle:
+- 1 → Soğuk Açılış (en dramatik)
+- 2 → Dünyanın Öncesi
+- 3 → Hayvanın Girişi
+- 4 → Nedensellik Zinciri
+- 2 → Dönüm Noktası
+- 1 → Karşı Anlatı Ortaya Çıkışı
+- 1 → Miras / Günümüz
+- 2 → B-Roll (harita + yakın detay)
+
+### 2. PROMPT OLUŞTURMA
+Her görsel an için:
+- Şablonu seç (1–5)
+- Stili seç (A veya B)
+- Atmosferi seç
+- Renk aksanını ekle
+- Midjourney VE Imagen4 versiyonu yaz
+
+### 3. KAYDET
+Şuraya kaydet: `wiki/beasttales/visuals/[konu-adı]-prompts.md`
+
+---
+
+## ÇIKTI FORMATI
+
 ```markdown
-# [Topic] — Midjourney Prompts
-**Script:** [script file link]
-**Total Prompts:** [N]
-**Accent Color:** [color]
+# [Konu] — Video Görselleri
+**Stil:** [A: Çizgi Roman / B: Doğal Tarih]
+**Renk Aksanı:** [renk]
+**Toplam Sahne:** [N]
 
 ---
 
-## SCENE 01 — COLD OPEN
-**Script moment:** [quote the 1-2 lines from script this illustrates]
-**Prompt:**
-```
-[full Midjourney prompt]
-```
-**Notes:** [any specific guidance for this scene]
+## SAHNE 01 — SOĞUK AÇILIŞ
+**Senaryo anı:** "[senaryodan 1-2 satır alıntı]"
+**Şablon:** [1–5]
+
+**Midjourney Prompt:**
+[prompt]
+
+**Imagen4 Prompt:**
+[prompt]
 
 ---
-[repeat for each scene]
+[her sahne için tekrar]
 ```
-
-## B-Roll Prompts
-After main scenes, generate 4 generic B-roll prompts for the topic:
-- Wide establishing shot of the civilization's capital
-- Map diagram style illustration (routes, territories)
-- Close detail of the animal's key anatomical feature
-- Historical artifact relevant to the topic

@@ -31,6 +31,31 @@ Tam YouTube otomasyon paketi.
 - Otomatik yükleme ve metadata
 - **Kaynak:** https://github.com/FujiwaraChoki/MoneyPrinterV2
 
+### 5. faceless-video (SamurAIGPT) ⭐ 438
+Yapay zeka ile yüzsüz video üretimi.
+- Senaryo + ses + konuşan yüz tamamen AI ile
+- Faceless kanal formatı için ideal
+- **Kaynak:** https://github.com/SamurAIGPT/AI-Faceless-Video-Generator
+
+### 6. advertools (eliasdabbas) ⭐ 1.4k
+YouTube SEO ve analiz araçları.
+- Anahtar kelime araştırması
+- Rakip kanal analizi
+- Online pazarlama verimliliği
+- **Kaynak:** https://github.com/eliasdabbas/advertools
+
+### 7. viral-shorts (Dark2C)
+Viral faceless YouTube Shorts üretici.
+- Trend konulardan otomatik Shorts
+- AI senaryo + TTS + FFmpeg pipeline
+- **Kaynak:** https://github.com/Dark2C/Viral-Faceless-Shorts-Generator
+
+### 8. youtube-mcp (pauling-ai)
+YouTube için 40 araçlı MCP server.
+- Kanal analitiği ve video yayınlama API'si
+- Claude Code ile direkt entegrasyon
+- **Kaynak:** https://github.com/pauling-ai/youtube-mcp-server
+
 ## Kullanım Önceliği
 
 | Amaç | Araç |
@@ -38,3 +63,7 @@ Tam YouTube otomasyon paketi.
 | Claude ile kanal stratejisi | `claude-youtube` |
 | Kısa video otomasyonu | `shortgpt` veya `money-printer` |
 | Tam otomasyon (oluştur + yükle) | `money-printer-v2` |
+| Yüzsüz video üretimi | `faceless-video` |
+| SEO araştırması | `advertools` |
+| Viral Shorts | `viral-shorts` |
+| YouTube API entegrasyonu | `youtube-mcp` |
