@@ -1,31 +1,42 @@
 # BeastTales — Aktif Bağlam (Hot Cache)
-> Son güncelleme: 2026-05-22 | Her oturumda bu dosyayı ilk oku
+> ÖNCE BU DOSYAYI OKU. Son güncelleme: 2026-05-22
 
-## Şu Anki Durum
-- **Yayınlanan Video:** 20
-- **Üretimde:** 0
-- **Hazır Bekleyen:** 0
-- **Trend Skoru:** animals that changed history → Rekabet 30.7 (DÜŞÜK FIRAT)
+## Kanal Durumu
+- **Kanal:** @beasttales00 | **ID:** UCwtvoOldIqa32w3mmfFPmKg
+- **Abone:** 5 | **Video:** 2 | **Ülke:** TR
+- **Durum:** BÜYÜME AŞAMASI — Her video kritik
 
-## Son VidIQ Keşfi (2026-05-22)
-- "animals that changed history" = En düşük rekabetli büyük fırsat
-- Bu keyword'ü her videoda kullan → kanal otoritesi birikir
-- Trend format: Komplo/debunk + hayvan + medeniyet = VPH yüksek
+## Yayınlanan 2 Video
+1. "Why Red Pandas Freeze Completely — You've Been Watching Them Wrong" (2026-05-22) → Sütun 1
+2. "What Really Killed Napoleon's 400,000 Men? - It Wasn't Winter" (2026-05-20) → Sütun 2
 
-## Bir Sonraki Araştırma Odağı
-Şu medeniyetler hiç işlenmedi (önerilen):
-- Khmer İmparatorluğu + hayvan TBD
-- İnka İmparatorluğu + lama/alpaka
-- Osmanlı İmparatorluğu + savaş hayvanı TBD
-- Çin Ming Hanedanı + ekolojik ajan TBD
-- Portekiz İmparatorluğu + okyanus hayvanı TBD
+## Rakip Alarm — KRITIK FIRSAT
+- **Garden Whispers:** 17 günde 12 → 3,420 abone. Format: bahçe/doğa gizemi, "The Hidden Reason..."
+- **The Bird Vault:** 26 günde 0 → 1,170 abone. Format: kuş sırları, "[N] Secrets Nobody Told You"
+- **BeastTales farkı:** Bu ikisinde TARİH yok — BeastTales'in güçlü ayırt edici özelliği bu
 
-## Aktif Görsel Stili
-- STİL A (Red Panda / çizgi roman) → thumbnail ve açılış sahneleri
-- STİL B (Doğal tarih) → B-roll, harita, anatomi sahneleri
-- Platform: Imagen4 (45 prompt/video) + Midjourney yedek
+## Şu An En Güçlü SEO Fırsatı
+- "red panda" → rekabet 43, aylık 105,667 → YÜKSEK HACİM
+- "red panda facts" → rekabet **24.5** → NEREDEYSE BOŞ
+- "animal intelligence" → rekabet **37** → FIRSAT
+- "animals that changed history" → rekabet **30.7** → EN AZ KİTLE EN AZ REK.
 
-## Hatırlatmalar
-- Her yüklemeden sonra `channels/beasttales/covered.md` güncelle
-- Her araştırmadan sonra bu dosyayı güncelle
-- `seo-veri.md` aylık VidIQ ile yenile
+## Bir Sonraki Video Önerileri
+**Sütun 1 (Hayvan Gizemi):**
+- Ahtapot renk körlüğü gizemi (renk görmeden nasıl renk değiştirir?)
+- Kuzgun zekası + insan yüzü tanıma
+- Kedi sesi evrimi (neden sadece insanlarla miyavlar?)
+
+**Sütun 2 (Tarihi Hayvan):**
+- Kunduz × Beaver Wars (Hollanda–Fransız sömürge çatışması)
+- Lama × İnka imparatorluğu taşımacılığı
+- Çekirge × Osmanlı-Mısır açlığı
+
+## İçerik Formatı Hatırlatması
+- Sütun 1: 8-10 dk, "You've been watching them wrong" tonu
+- Sütun 2: 12-14 dk, "Tarih yanlış öğretti" tonu
+- Her videoda: hayvan yüzü thumbnail + 3 kelime metin + karanlık arka plan
+
+## Güncelleme Talimatı
+Her yüklemeden sonra → covered.md güncelle + bu dosyayı güncelle
+Her `/bt-research` çalışmasından sonra → bu dosyanın "Öneriler" bölümünü güncelle

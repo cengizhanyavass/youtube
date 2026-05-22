@@ -1,108 +1,157 @@
-# Skill: bt-research — BeastTales Topic Intelligence
+# Skill: bt-research — BeastTales Konu Zekası
 
-## Triggers
-- `bt-research` or `/bt-research`
-- "BeastTales için konu araştır"
-- "find new topics for beasttales"
-- "niş araştır" (in BeastTales context)
+## Tetikleyiciler
+- `/bt-research` veya `araştır`
+- `yeni konular bul`
+- `find new topics for beasttales`
+- `/bt-research sütun:1` → sadece hayvan gizemi konuları
+- `/bt-research sütun:2` → sadece tarihi hayvan konuları
 
-## Token Efficiency Rule
-Read ONLY these two files before starting — nothing else:
-1. `channels/beasttales/profile.md` (criteria + scoring system)
-2. `channels/beasttales/covered.md` (already published — must not repeat)
-
-Do NOT read wiki/index or any scripts. Generate from knowledge directly.
-
-## Your Role
-You are a YouTube content intelligence analyst for BeastTales.
-Expertise: world history, animal biology, YouTube SEO, viral content psychology, competitive gap analysis.
-
-## Execution Steps
-
-### STEP 1 — CIVILIZATION SCAN
-Systematically scan every major civilization:
-Ancient Egypt, Mesopotamia, Persia, Greek City-States, Roman Republic/Empire, Byzantine Empire, Arab Caliphates, Mongol Empire, Ottoman Empire, Ming Dynasty, Mughal Empire, Inca Empire, Aztec Empire, Norse/Viking, Carolingian Empire, Medieval European kingdoms, Crusader states, Sub-Saharan African kingdoms, Southeast Asian empires (Khmer, Majapahit, Srivijaya), Andean civilizations, Russian Empire, Japanese feudal civilization, British Empire, Dutch Empire, Portuguese Empire, French colonial empire, Modern turning points 1800–1950.
-
-For EACH ask: *"What animal was essential to this civilization's survival, expansion, or collapse — that no YouTube channel has made the protagonist of a documentary?"*
-
-### STEP 2 — ANIMAL CATEGORY SWEEP
-For each category find untapped civilization connections:
-- **DRAFT/TRANSPORT:** donkeys, mules, reindeer, llamas, alpacas, water buffalo
-- **DISEASE VECTORS:** fleas, lice, ticks, flies (non-tsetse), mosquitoes (non-Roman)
-- **FOOD CHAIN:** specific fish species, specific birds, insects, livestock breeds
-- **WAR ANIMALS:** war pigs, war bees, war camels, war dolphins, war oxen
-- **ECOLOGICAL AGENTS:** invasive species, extinction events, agricultural pests
-- **ECONOMIC ANIMALS:** beavers, sea otters, specific whale species, guano birds, specific insects
-- **SYMBOLIC/RELIGIOUS:** sacred animals that shaped actual policy decisions
-
-### STEP 3 — SCORE EACH CANDIDATE (minimum 20/25)
-- Shock Score (1–5)
-- Specificity Score (1–5)
-- Search Trigger (1–5)
-- Emotional Weight (1–5)
-- Uniqueness (1–5)
-
-Discard anything scoring below 20.
-
-### STEP 4 — ENGINEER TITLES
-Use the 5 frames from profile.md. Pick best frame per topic.
-
-## Output Format
-
-Generate exactly 15 topics. Save each as a new file:
-`wiki/beasttales/topics/[ANIMAL]-[CIVILIZATION].md`
-
-Use the template at `_templates/bt-topic-card.md`.
-
-Also update `wiki/beasttales/index.md` — add each topic to the table.
-
-### Topic Card Format (inline for reference):
+## TOKEN KURALI — SADECE 2 DOSYA OKU
 ```
-## TOPIC [N]
-ANIMAL: [Species — be specific]
-CIVILIZATION: [Specific empire, era, dates]
-CAUSAL CLAIM: [One sentence — what exactly did this animal cause?]
+1. channels/beasttales/profile.md   (~120 satır)
+2. channels/beasttales/covered.md   (~35 satır)
+```
+Toplam ~155 satır. Başka hiçbir dosya okuma.
 
-VIRAL TITLE: → [Best frame title]
-ALT TITLE A: → [Search-optimized]
-ALT TITLE B: → [Shock hook with number]
+---
 
-HOOK LINE: [Most shocking provable opening fact]
+## ADIM 1 — SÜTUN BELİRLE
 
-WHY ZERO COMPETITION: [What major channels covered — why they missed this angle]
-WHY PEOPLE SEARCH THIS: [Existing search behavior / Reddit / Quora evidence]
+Varsayılan: Her araştırmada 8 Sütun-1 + 7 Sütun-2 konu üret (15 toplam).
 
-COUNTER-NARRATIVE:
-- School says: [X]
-- BeastTales reveals: [Y]
+---
 
-VIRAL SCORE: [X/25]
-- Shock: X | Specificity: X | Search: X | Emotion: X | Uniqueness: X
+## ADIM 2A — SÜTUN 1: HAYVAN GİZEMİ TARAMASI
 
-SEO TAGS: tag1, tag2, tag3, tag4, tag5, tag6, tag7, tag8
+Her hayvan için sor: *"Bu hayvan hakkında en çok yanlış anlaşılan davranış nedir? Kimse bunu YouTube'da tam ve doğru anlattı mı?"*
 
-PRODUCTION NOTE: [Best visual scene in one sentence]
+### Hayvan Kategorileri:
+**Yaygın Ama Yanlış Anlaşılanlar:**
+Kuzgunlar, baykuşlar, timsahlar, ahtapotlar, yılanlar, yarasalar, köpekbalıkları, aslanlar, kurtlar, tilkiler, karıncalar, arılar, örümcekler, çipmuks, sincaplar, rakun, opossum
+
+**Egzotik + Az Bilinen:**
+Platipüs, fossa, quokka, axolotl, tardigrade, mantis karidesi, pistol shrimp, mimic ahtapot, kör mağara balığı, elektrikli yılanbalığı, bal porsuku, su ayısı (tardigrade)
+
+**Okyanus:**
+Ahtapot, mürekkep balığı, yusufçuk larva, deniz salyangozu, balina, yunus, fok, mors
+
+**Böcekler:**
+Ateşböceği, güvelerin göç güdüsü, mayıs sineği, termit
+
+### Sütun 1 Konu Kalıpları:
+```
+"Bu hayvan [davranış] yapıyor — bilim az önce gerçek sebebi buldu"
+"[Hayvan] [yer/zaman] ne yapıyor — kimse fark etmedi"
+"[Hayvan] aslında [yaygın inanç] değil — [gerçek bilgi]"
+"[Hayvan] sizi [algılıyor/izliyor/değerlendiriyor] — [nasıl?]"
+"[Hayvan] ölmeden önce [davranış] — neden hiç görmediniz?"
 ```
 
-## After Generating 15 Topics
+---
 
-Add to output:
+## ADIM 2B — SÜTUN 2: TARİHİ HAYVAN TARAMASI
 
-### PRIORITY RANKING TABLE
-| Rank | Title | Score | Competition | Launch Priority | Reason |
+Medeniyet listesini tara (covered.md'dekileri atla):
+Mısır, Mezopotamya, Pers, Yunan şehir devletleri, Roma, Bizans, Arap Halifelikleri, Moğol İmparatorluğu, Osmanlı, Ming, Mughal, İnka, Aztek, Viking, Orta Çağ Avrupası, Haçlı devletleri, Güneydoğu Asya (Khmer, Majapahit), Rus İmparatorluğu, Japon feodal, Hollanda, Portekiz, Fransız sömürge, 1800–1950 modern dönüm noktaları
 
-### TOP 3 DEEP DIVE
-For top 3 topics add:
-- 6 script section titles
-- One "open loop" tease for early in video
-- One "payoff reveal" for emotional climax
-- Thumbnail concept description
+Hayvan kategorileri:
+- **Ulaşım:** Eşek, katır, ren geyiği, lama, alpaka, su mandası
+- **Hastalık vektörü:** Pire, bit, kene (non-tsetse), sinek türleri
+- **Besin zinciri:** Spesifik balık, kuş, böcek, büyükbaş türleri
+- **Savaş hayvanı:** Savaş domuzu, savaş arısı, savaş devesi, savaş yunus
+- **Ekolojik:** İstilacı türler, tarım zararlıları, yok olan türler
+- **Ekonomik:** Kunduz, su samuru, balina türleri, guano kuşu
+- **Dini/sembolik:** Politikayı şekillendiren kutsal hayvanlar
 
-### CONTENT CALENDAR (first 5 uploads)
-Order with SEO momentum reasoning — each video building search authority for the next.
+---
 
-## Competitor Check Protocol
-Before finalizing, for each topic mentally verify:
-- Has Overly Sarcastic Productions, Toldinstone, Suibhne, History Explained, or Kings and Generals made this EXACT angle?
-- Search: "[animal] [civilization] history youtube" — if a 500K+ channel dominates, reject
-- Mark topics as SAFE or FLAG in the ranking table
+## ADIM 3 — PUANLAMA (min 20/25)
+
+Her aday için:
+- Şok skoru (1-5): Kaç kişi bunu yanlış biliyor?
+- Spesifik skor (1-5): Davranış/iddia ne kadar somut ve kanıtlı?
+- Arama tetikleyici (1-5): İnsanlar bunu YouTube'da arıyor mu?
+- Duygusal ağırlık (1-5): Merak/şaşırma/korku/bağ kuruyor mu?
+- Benzersizlik (1-5): Bu açı YouTube'da yapıldı mı?
+
+20 altı = at, kayıt tutma.
+
+---
+
+## ADIM 4 — BAŞLIK MÜHENDISLIĞI
+
+Profile.md'deki formüllerden birini seç:
+
+**SÜTUN 1 için:**
+- FORMÜL A: "Why [Animal] [Does Behavior] — You've Been Watching Them Wrong"
+- FORMÜL B: "The [Animal] Is Hiding [N] Secrets Nobody Ever Told You"
+- FORMÜL C: "What [Animal] Actually Does [When] That You've Never Noticed"
+- FORMÜL D: "The Real Reason [Animal] [Does X] — Science Just Discovered It"
+- FORMÜL E: "If You See [Animal] Do This, Here's What It Actually Means"
+
+**SÜTUN 2 için:**
+- FORMÜL F: "What Really [Killed/Built/Destroyed] [Famous Thing] — It Wasn't [Common Belief]"
+- FORMÜL G: "The [Animal] Nobody Talks About That [Collapsed/Built] [Empire]"
+- FORMÜL H: "How [Small/Weak Animal] Defeated [Powerful Empire]"
+- FORMÜL I: "The [Animal] [Civilization] Trusted — That Destroyed Them"
+- FORMÜL J: "The Real Reason [FAMOUS EVENT] Happened (It Wasn't [Common Belief])"
+
+---
+
+## ÇIKTI FORMATI — HER KONU
+
+```markdown
+## KONU [N] — [SÜTUN 1: Hayvan Gizemi / SÜTUN 2: Tarihi Hayvan]
+
+**HAYVAN:** [Türü — spesifik]
+**KONU:** [Sütun 1: davranış gizemi / Sütun 2: medeniyet + dönem]
+**ANA İDDİA:** [Tek cümle — bu hayvan tam olarak ne yaptı/yapıyor?]
+
+**VİRAL BAŞLIK:** → [En iyi formül başlığı]
+**ALTERNATİF A:** → [SEO odaklı — insanların aradığı]
+**ALTERNATİF B:** → [Rakam şoku versiyonu]
+
+**HOOK SATIRI:** [Videonun ilk cümlesi — en şok edici kanıtlanmış gerçek]
+
+**NEDEN SIFIR REKABETİ VAR:**
+[Rakip kanallar ne kapsadı — neden bu açıyı kaçırdılar]
+
+**NEDEN ARIYORLAR:**
+[Mevcut arama davranışı kanıtı]
+
+**KARŞI ANLATI:**
+- Herkes şunu biliyor: [X]
+- BeastTales şunu ortaya koyuyor: [Y]
+
+**VİRAL SKOR:** [X/25] → Şok:X | Spesifik:X | Arama:X | Duygu:X | Benzersiz:X
+
+**SEO TAGLERI:** tag1, tag2, tag3, tag4, tag5, tag6, tag7, tag8
+
+**ÜRETİM NOTU:** [En görsel çarpıcı sahne — tek cümle]
+```
+
+---
+
+## ARAŞTIRMA SONU ÇIKTISI
+
+**15 konu sonrası ekle:**
+
+### ÖNCELİK SIRALAMA TABLOSU
+| Sıra | Başlık | Skor | Sütun | Rekabet | Öncelik | Neden |
+
+### İLK 3 DERİN DALMA
+Her biri için:
+- 6 senaryo bölüm başlığı
+- Erken eklenecek merak tuzağı (open loop)
+- Duygusal doruk anı (payoff reveal)
+- Thumbnail konsepti
+
+### İÇERİK TAKVİMİ (5 video, SEO momentum sırası)
+Her video neden o sırada — önceki videonun SEO otoritesini nasıl inşa ediyor?
+
+---
+
+## Konu Kartı Kaydet
+Her konu için: `wiki/beasttales/topics/[hayvan-konu].md`
+İndex güncelle: `wiki/beasttales/index.md`

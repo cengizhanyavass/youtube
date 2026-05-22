@@ -1,99 +1,137 @@
-# BeastTales — Channel DNA
+# BeastTales — Kanal DNA (Gerçek Veri)
+> VidIQ + Kanal Analizi — 2026-05-22 | Kanal: @beasttales00
 
-## Identity
-- **Channel:** BeastTales
-- **Format:** Faceless documentary, English
-- **Duration:** 12–14 min
-- **Visual Style:** Editorial ink illustration — natural history book quality (think National Geographic historical art: detailed hatching, aged parchment tones, scientific accuracy meets drama)
-- **Tone:** Cinematic, dramatic, "the history they didn't teach you"
-- **Audience:** 18–45, English-speaking, curious but not academic
-- **CPM Target:** $12–18 (history + educational crossover)
+## Kanal Kimliği
+- **Kanal:** Beast Tales (@beasttales00)
+- **Kanal ID:** UCwtvoOldIqa32w3mmfFPmKg
+- **Kuruluş:** 2023-11-30 | **Ülke:** Türkiye
+- **Format:** Yüzsüz belgesel, İngilizce, 8–14 dk
+- **Mevcut Durum:** 5 abone, 2 video — BÜYÜME AŞAMASI
 
-## The Core Promise
-Every video answers: *"This specific animal made or broke this specific civilization — and you've never heard this story."*
+## İki İçerik Sütunu
 
-## Channel Voice Rules
-1. Open with the most shocking provable fact — no warm-up
-2. Never say "in today's video" — start mid-story
-3. Specific numbers over vague claims ("40,000 died" not "many died")
-4. Counter the school narrative in first 90 seconds
-5. Animal is always the CAUSE, never a symbol or side character
-6. Cinematic present tense in script ("The harbor burns. The rats scatter.")
-7. No academic hedging — state claims confidently with evidence woven in
+### SÜTUN 1 — Hayvan Gizemi (Animal Mystery)
+> "Bu hayvanı yanlış izliyordun"
+- Format: Davranış gizemi + bilimsel açıklama + şok gerçek
+- Uzunluk: 8–10 dk
+- Örnek video: "Why Red Pandas Freeze Completely — You've Been Watching Them Wrong"
+- Ton: Merak uyandıran, kişisel, "sen de bunu yanlış biliyordun"
 
-## Topic Qualification Criteria (ALL 5 must pass)
+### SÜTUN 2 — Tarihi Hayvan (Historical Beast)
+> "Tarih yanlış öğretti — asıl sebep buydu"
+- Format: Ünlü tarihi olay + hayvan gerçek sebep + karşı anlatı
+- Uzunluk: 12–14 dk
+- Örnek video: "What Really Killed Napoleon's 400,000 Men? - It Wasn't Winter"
+- Ton: Sinematik, dramatik, "okulda öğretilmedi"
 
-| # | Criterion | Test |
-|---|-----------|------|
-| 1 | SEO Demand | Real existing search — Reddit threads, Quora, Wikipedia traffic, viral news |
-| 2 | Near-Zero Competition | No 500K+ channel has made THIS exact angle as dedicated video |
-| 3 | Counter-Narrative | Directly contradicts what schools teach |
-| 4 | Animal as Primary Agent | Animal is the CAUSE of civilizational event, not background |
-| 5 | Producible Without Filming | 100% illustratable: historical art + AI images + maps |
+## Rakip Formül Analizi (Gerçek Verilerden)
 
-## Viral Score System (minimum 20/25 to proceed)
-- **Shock Score (1–5):** Contradicts common knowledge
-- **Specificity Score (1–5):** Exact causal claim with numbers
-- **Search Trigger (1–5):** Answers a question people already type
-- **Emotional Weight (1–5):** Survival, death, betrayal, scale, injustice
-- **Uniqueness (1–5):** Angle has never been made as dedicated video
+### Garden Whispers (UCFc5u4JNuKHoXtgp8tyVbNg)
+> 17 günde 12 → 3,420 abone | 361,959 görüntüleme
+- Viral başlık kalıpları:
+  - "If You See [X], Stop Everything" — aciliyet + merak
+  - "Why You Should Never [Do X] — The Real Reason" — yasak + merak
+  - "The Hidden Reason Why [Animal] Does [X]" — gizem
+  - "What [Animal] Actually Knows (That You Don't)" — sır
 
-## 5 Proven Viral Title Frames
+### The Bird Vault (UCbASJ73oviYSk_6Xgj2xtRg)
+> 26 günde 0 → 1,170 abone | 89,547 görüntüleme
+- Viral başlık kalıpları:
+  - "The [Animal] Is Hiding [N] Secrets Nobody Ever Told You" — rakam + sır
+  - "What [Animal] Does [When/At Time] That Most Humans Never Notice" — gizli gözlem
+  - "The [Animal] In Your Yard Knows Something About You" — kişisel bağ
+  - "Why You Never Find Dead [Animal] — The Hidden Truth" — evrensel gizem
 
-**FRAME A — THE DEBUNK:**
-`"The Real Reason [FAMOUS EVENT] Happened (It Wasn't [COMMON BELIEF])"`
+## BeastTales Viral Başlık Formülleri
 
-**FRAME B — THE SCALE SHOCK:**
-`"[SPECIFIC NUMBER] [ANIMALS] [VERB] [SPECIFIC OUTCOME]"`
-
-**FRAME C — THE INVISIBLE AGENT:**
-`"The [ANIMAL] Nobody Talks About That [CIVILIZATIONAL IMPACT]"`
-
-**FRAME D — THE PARADOX:**
-`"How [SMALL/WEAK ANIMAL] Defeated [POWERFUL EMPIRE]"`
-
-**FRAME E — THE BETRAYAL:**
-`"The [ANIMAL] [CIVILIZATION] Trusted — That Destroyed Them"`
-
-## Visual Style Guide (Midjourney Prompts)
-
-**Base style string:**
+### SÜTUN 1 (Hayvan Gizemi) için:
 ```
-natural history book illustration, detailed ink engraving, 
-editorial illustration style, National Geographic historical art,
-cross-hatching technique, aged parchment warm tones,
-dramatic chiaroscuro lighting, cinematic composition,
-highly detailed [ANIMAL] in foreground, [HISTORICAL SETTING] background,
-[ATMOSPHERE: burning city / desert storm / frozen tundra / plague-ravaged streets],
-[ANGLE: extreme close-up / low angle dramatic / bird's eye view of scene],
-muted earth tones with accent [COLOR], sharp foreground soft background,
-16:9 aspect ratio --ar 16:9 --style raw --v 6
+FORMÜL A: "Why [Animal] [Does Behavior] — You've Been Watching Them Wrong"
+FORMÜL B: "The [Animal] Is Hiding [N] Secrets Nobody Ever Told You"
+FORMÜL C: "What [Animal] Actually Does [When] That You've Never Noticed"
+FORMÜL D: "The Real Reason [Animal] [Does X] — Science Just Discovered It"
+FORMÜL E: "If You See [Animal] Do This, Here's What It Actually Means"
 ```
 
-**Thumbnail style string:**
+### SÜTUN 2 (Tarihi Hayvan) için:
 ```
-dramatic close-up [ANIMAL FACE], eyes intense direct gaze,
-editorial ink illustration, natural history engraving style,
-[CIVILIZATION ELEMENT: Roman colosseum / Egyptian hieroglyphs / Viking longship] in background,
-dark dramatic sky, bold contrast lighting,
-muted palette with single accent color [red/gold/deep blue],
-16:9 aspect ratio, space for text overlay top/bottom
---ar 16:9 --style raw --v 6
+FORMÜL F: "What Really [Killed/Built/Destroyed] [Famous Thing] — It Wasn't [Common Belief]"
+FORMÜL G: "The [Animal] Nobody Talks About That [Collapsed/Built] [Empire]"
+FORMÜL H: "How [Small/Weak Animal] Defeated [Powerful Empire]"
+FORMÜL I: "The [Animal] [Civilization] Trusted — That Destroyed Them"
+FORMÜL J: "The Real Reason [FAMOUS EVENT] Happened (It Wasn't [Common Belief])"
 ```
 
-## Script Structure (12–14 min = ~1800–2000 words)
+## Ses Tonu — 100% İnsansı Yazım Kuralları
 
-1. **COLD OPEN** (0:00–0:45): Most shocking fact — drop audience in the middle of the event
-2. **THE WORLD BEFORE** (0:45–2:30): Set civilization context — what was at stake
-3. **ENTER THE ANIMAL** (2:30–4:30): Introduce animal's role — the mechanism begins
-4. **THE CAUSAL CHAIN** (4:30–8:00): Step by step how the animal changed everything
-5. **THE POINT OF NO RETURN** (8:00–10:30): The moment civilization crossed the threshold
-6. **THE COUNTER-NARRATIVE REVEAL** (10:30–12:00): "This is what schools never told you"
-7. **THE LEGACY** (12:00–13:30): Long-term consequences still felt today
-8. **CLOSE / NEXT VIDEO TEASE** (13:30–14:00): 30 sec — seed curiosity for next topic
+### SÜTUN 1 Ses Tonu:
+1. Okuyucuya direkt konuş: "You've seen this before. You just didn't know what it meant."
+2. Soru sor, hemen cevapla: "Why does a red panda freeze? It's not fear. It's something far stranger."
+3. Günlük dilde bilimsel gerçek: Jargon yok, sürpriz var
+4. Kısa cümleler. Çok kısa. Sonra uzun bir cümle ile bağla ve tekrar kısa.
+5. Her paragraf sonu: okuyucuyu sonraki paragrafa çeken tek satır
 
-## SEO Metadata Template
-- **Title:** [Viral frame title] — max 60 chars
-- **Description:** First 2 lines must contain primary keyword. Include timestamps.
-- **Tags:** 8–10 tags: [animal], [civilization], [history documentary], [historical mystery], [animal history], [educational], [BeastTales], [specific event name]
-- **Thumbnail:** Animal face + 3-word text overlay + civilization silhouette background
+### SÜTUN 2 Ses Tonu:
+1. Orta sahneye düş: "The harbor is burning. The rats are everywhere."
+2. Sayı kullan her zaman: "400,000 men. Gone in four months."
+3. Şimdiki zamanda anlat tarihi: "Napoleon watches. He doesn't understand yet."
+4. Karşı anlatıyı ilk 2 dakikada ver: "Every history book blames the winter. They're all wrong."
+5. Hayvan her zaman özne: "The louse spreads. The louse kills. The louse wins."
+
+## SEO Kelime Stratejisi (VidIQ Verisi)
+
+### Ana Hedef Kelimeler:
+| Kelime | Rekabet | Aylık Arama | Öncelik |
+|--------|---------|-------------|---------|
+| red panda | 43.3 | 105,667 | ⭐⭐⭐ YÜKSEK |
+| red panda facts | **24.5** | 3,583 | ⭐⭐⭐ DÜŞÜK REK. |
+| animal intelligence | **37.0** | 25,933 | ⭐⭐⭐ FIRSAT |
+| wildlife documentary | 44.0 | 258,971 | ⭐⭐ İYİ |
+| animals that changed history | **30.7** | 5,025 | ⭐⭐⭐ EN DÜŞÜK |
+| animal facts | 59.0 | 400,433 | ⭐⭐ YÜKSEK HACİM |
+
+### Her Videoda 3 Katmanlı Tag:
+```
+KATMAN 1 (Düşük Rekabet): [konuya özel düşük rek. kelime]
+KATMAN 2 (Orta): animal facts, wildlife documentary, animal documentary
+KATMAN 3 (Yüksek Hacim): animals, wildlife, nature documentary
+```
+
+## Görsel Stil
+
+### SÜTUN 1 (Hayvan Gizemi) — "Red Panda Stili":
+```
+comic book illustration style, detailed ink linework, graphic novel art,
+dramatic cinematic lighting, warm interior glow vs cold exterior contrast,
+highly detailed nature background, sharp foreground soft background,
+2D illustration, dark moody atmosphere
+```
+
+### SÜTUN 2 (Tarihi Hayvan) — "Doğal Tarih Stili":
+```
+natural history book illustration, detailed ink engraving, editorial style,
+National Geographic historical art, cross-hatching technique,
+aged parchment warm tones, dramatic chiaroscuro lighting
+```
+
+## Thumbnail Formülü
+```
+Hayvan yüzü (extreme close-up) + 3 kelime metin + karanlık arka plan
+"YOU'VE BEEN WRONG" / "THE REAL REASON" / "NOBODY KNEW"
+```
+
+## Konu Kalite Kriterleri
+
+### SÜTUN 1 için (min 20/25):
+- Şok skoru (1-5): Kaç kişi bunu yanlış biliyor?
+- Spesifik skor (1-5): Davranış ne kadar somut?
+- Arama tetikleyici (1-5): "Neden [hayvan] [davranış]" diye arıyorlar mı?
+- Duygusal ağırlık (1-5): Merak/şaşırma/bağ kuruyor mu?
+- Benzersizlik (1-5): Bu açı YouTube'da yapıldı mı?
+
+### SÜTUN 2 için (min 20/25):
+- Şok skoru (1-5): Karşı anlatı ne kadar güçlü?
+- Spesifik skor (1-5): Tam hayvan + olay + sayı var mı?
+- Arama tetikleyici (1-5): İnsanlar bu olayı arıyor mu?
+- Duygusal ağırlık (1-5): Hayatta kalma/ölüm/ihanet/ölçek var mı?
+- Benzersizlik (1-5): Bu açı hiç yapılmadı mı?

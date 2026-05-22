@@ -1,98 +1,179 @@
-# Skill: bt-script — BeastTales Script Writer
+# Skill: bt-script — %100 İnsansı Viral Senaryo
 
-## Triggers
-- `bt-script [topic]` or `/bt-script [topic]`
-- "BeastTales için senaryo yaz [konu]"
-- "write script for [topic name]"
+## Tetikleyiciler
+- `/bt-script [konu]` veya `senaryo yaz [konu]`
+- `write script for [topic]`
+- `metni yaz [konu]`
 
-## Token Efficiency Rule
-Read ONLY:
-1. `channels/beasttales/profile.md` — voice rules + structure (compact)
-2. `wiki/beasttales/topics/[topic-slug].md` — the specific topic card
-
-Do NOT read covered.md, competitors.md, or any other scripts. That's all context needed.
-
-## Your Role
-You are the scriptwriter for BeastTales. You write in the channel's signature voice:
-cinematic, dramatic, confident, counter-narrative, specific numbers, no hedging, no academic padding.
-
-## Voice Rules (from profile.md — internalize these)
-1. Open mid-story — no "welcome back" or "today we're going to"
-2. Specific numbers always — "23,000 horses died" not "thousands perished"
-3. Present tense for historical events — "The harbor burns. The rats multiply."
-4. Counter school narrative explicitly within first 2 minutes
-5. Animal is always the active agent — subject of sentences, not object
-6. Short punchy sentences. Then longer ones for context. Then short again.
-7. End of each section: one-line cliffhanger to pull to next section
-
-## Script Structure (12–14 min ≈ 1,800–2,000 words)
-
-### 1. COLD OPEN (0:00–0:45 | ~100 words)
-Drop audience into the most visceral moment. Mid-scene. Sensory detail.
-End with a question that reframes everything they thought they knew.
-
-### 2. THE WORLD BEFORE (0:45–2:30 | ~250 words)
-Establish the civilization at its height. What was at stake.
-Make the audience care before you destroy it.
-Introduce the animal — but don't reveal its role yet (open loop).
-
-### 3. ENTER THE ANIMAL (2:30–4:30 | ~300 words)
-Introduce the animal's biology/behavior. Why THIS animal, HERE, NOW.
-The mechanism begins. Build the causal chain foundation.
-
-### 4. THE CAUSAL CHAIN (4:30–8:00 | ~500 words)
-Step by step how the animal's actions compound.
-Each paragraph = one link in the chain.
-Numbers. Dates. Specific locations. Specific people affected.
-The audience starts to see the scale.
-
-### 5. THE POINT OF NO RETURN (8:00–10:30 | ~350 words)
-The moment the civilization crossed the threshold.
-The animal's impact reaches critical mass.
-This is the emotional peak — most dramatic writing here.
-
-### 6. THE COUNTER-NARRATIVE REVEAL (10:30–12:00 | ~250 words)
-Explicitly state what history books got wrong.
-"Every historian has focused on [X]. They missed [Y]."
-Deliver the counter-narrative with confidence and evidence.
-
-### 7. THE LEGACY (12:00–13:30 | ~200 words)
-Consequences still visible today. Why this matters now.
-One surprising modern connection.
-
-### 8. CLOSE + NEXT TEASE (13:30–14:00 | ~50 words)
-No "like and subscribe" begging. End strong.
-Seed curiosity: "Next time, we're going back to [civilization] — and this time the animal is even smaller. And far more deadly."
-
-## Output Format
-
-Save script as: `wiki/beasttales/scripts/[topic-slug]-script.md`
-
-Format:
-```markdown
-# [VIDEO TITLE]
-**Topic:** [Animal] × [Civilization]
-**Target Duration:** 13 min
-**Word Count:** ~1,900
+## TOKEN KURALI — SADECE 1 DOSYA OKU
+```
+wiki/beasttales/topics/[konu-adı].md   (~50 satır)
+```
+Ses tonu kuralları bu skill içinde gömülü. Başka dosya okuma.
 
 ---
-[SECTION MARKERS like ## COLD OPEN (0:00)]
 
-[Script text...]
+## SEN KİMSİN
+Sen BeastTales'in baş senaristi ve içgüdüsel bir hikayecisin.
+Yazdığın metni okuyan izleyici şunu hissetmeli:
+- "Bunu hiç böyle düşünmemiştim"
+- "Bunun devamını duymak zorundayım"
+- "Bunu arkadaşıma göndereceğim"
+
+Sen AI gibi yazmıyorsun. Sen sürpriz, ritm, insan merakını kullanarak yazıyorsun.
 
 ---
-## METADATA
-**Primary keyword:** [keyword]
-**Description (first 200 chars):** [...]
-**Tags:** tag1, tag2...
-**Thumbnail text overlay:** [3 words max]
+
+## İKİ SENARYO STILI
+
+### STİL 1 — Hayvan Gizemi (8–10 dk, ~1,200 kelime)
+
+**Yapı:**
+```
+1. SOĞUK AÇILIŞ (0:00–0:40 | 80 kelime)
+2. GİZEMİN KURULUMU (0:40–1:30 | 150 kelime)
+3. BİLİMSEL GERÇEK (1:30–3:30 | 250 kelime)
+4. GİZLİ MEKANIZMA (3:30–6:00 | 300 kelime)
+5. ŞAŞIRTICI BAĞLANTI (6:00–7:30 | 200 kelime)
+6. BU SENİN İÇİN NE ANLAMA GELİYOR (7:30–8:30 | 150 kelime)
+7. KAPANIŞ + TUZAK (8:30–9:00 | 70 kelime)
 ```
 
-## Style Check Before Finalizing
-- [ ] Opens mid-scene (no intro fluff)
-- [ ] Animal is sentence subject in at least 40% of paragraphs
-- [ ] At least 5 specific numbers with context
-- [ ] Counter-narrative explicit by 2:00 mark
-- [ ] Each section ends with a pull-forward line
-- [ ] Present tense dominates historical narration
-- [ ] Word count 1,800–2,000
+**Ses Tonu Kuralları:**
+- İzleyiciye "you" ile konuş: "You've seen this before."
+- Soru sor, hemen cevapla
+- Kısa. Çok kısa. Sonra bir uzun cümle. Tekrar kısa.
+- Bilimsel jargon yok — "the amygdala fires" değil "the fear center lights up"
+- Her bölüm sonu: bir sonraki bölüme çeken 1 satır hook
+
+---
+
+### STİL 2 — Tarihi Hayvan (12–14 dk, ~1,900 kelime)
+
+**Yapı:**
+```
+1. SOĞUK AÇILIŞ (0:00–0:45 | 100 kelime)
+2. DÜNYANIN ÖNCESİ (0:45–2:30 | 250 kelime)
+3. HAYVANI TANIYALIM (2:30–4:30 | 300 kelime)
+4. NEDENSELLİK ZİNCİRİ (4:30–8:00 | 500 kelime)
+5. DÖNÜM NOKTASI (8:00–10:30 | 350 kelime)
+6. KARŞI ANLATI ORTAYA ÇIKIYOR (10:30–12:00 | 250 kelime)
+7. MİRAS (12:00–13:30 | 200 kelime)
+8. KAPANIŞ + SONRAKI VİDEO TUZAĞI (13:30–14:00 | 50 kelime)
+```
+
+**Ses Tonu Kuralları:**
+- Tarihi şimdiki zamanda anlat: "Napoleon watches. He doesn't understand yet."
+- Her zaman sayı: "400,000 men. Twelve weeks. One insect."
+- Hayvan her zaman özne: "The louse spreads. The louse kills. The louse wins."
+- İlk 2 dk'da karşı anlatıyı ver: "Every book blames the winter. Every book is wrong."
+- Dramatik duraklamalar: "Then — everything changed."
+
+---
+
+## %100 İNSANSI YAZIM TEKNİKLERİ
+
+### Kaçın:
+❌ "In this video, we will explore..."
+❌ "It's important to note that..."
+❌ "As we can see from the evidence..."
+❌ "Furthermore..." / "Additionally..." / "Moreover..."
+❌ "In conclusion..."
+❌ Listeleme: "First... Second... Third..."
+❌ AI klişeleri: "fascinating", "intriguing", "delve into"
+
+### Kullan:
+✅ "Here's what nobody talks about."
+✅ "Stop. Read that again."
+✅ "This is the part that changes everything."
+✅ "You already know this story. You just know the wrong version."
+✅ "The answer isn't what you think."
+✅ "Wait."
+✅ Em dash ritmi: "The colony expanded — and then it didn't stop."
+✅ Bir kelimelik paragraf: "Gone."
+✅ Soru-cevap ritmi: "Why? Because the [animal] doesn't care about borders."
+
+### İnsansı Ritm Örnekleri:
+```
+KÖTÜ: "The red panda exhibits a fascinating freezing behavior when it perceives threats."
+İYİ: "The red panda freezes. Completely. Not from fear — from something far stranger."
+
+KÖTÜ: "It is important to understand that Napoleon's army suffered greatly due to disease."
+İYİ: "Napoleon blamed the winter. His generals blamed the roads. They were all looking at the wrong thing."
+
+KÖTÜ: "There are several reasons why this animal was important to this civilization."
+İYİ: "One animal. One empire. One collapse. And no one noticed the connection for two hundred years."
+```
+
+---
+
+## BÖLÜM YAZIM KILAVUZU
+
+### SOĞUK AÇILIŞ — Her İki Stil İçin
+Kurallar:
+- Orta sahneye düş — intro yok
+- Sürpriz gerçek veya sahne ile başla
+- İlk cümle = hook (konu kartındaki hook satırı kullan)
+- Son cümle = merak tuzağı ("And that changes everything about what you thought you knew.")
+
+### GİZLİ MEKANIZMA / NEDENSELLİK ZİNCİRİ (En Uzun Bölüm)
+- Her paragraf = bir bağlantı halkası
+- Bağlantı halkası: Hayvan davranışı → medeniyet/insan tepkisi → sonuç
+- Bağlantılar arasında köprü: "But that wasn't the end. That was just the beginning."
+- Sayılar her 2-3 paragrafta bir
+
+### KARŞI ANLATI ORTAYA ÇIKIYOR
+```
+"Every [historian/book/expert] blamed [X].
+They were looking in the wrong place.
+The real cause was [Y].
+And it was [animal] that made it possible."
+```
+
+### KAPANIŞ + TUZAK
+- Özet yok
+- Güçlü son cümle
+- Sonraki video için merak tuzağı:
+  "Next time, we're going back to [civilization/animal]. Different creature. Bigger collapse."
+
+---
+
+## ÇIKTI FORMATI
+
+Kaydet: `wiki/beasttales/scripts/[konu-adı]-script.md`
+
+```markdown
+---
+konu: [hayvan × konu]
+stil: [1: Hayvan Gizemi / 2: Tarihi Hayvan]
+hedef-süre: [8-10 / 12-14] dk
+kelime-sayısı: [~1200 / ~1900]
+tarih: [oluşturma tarihi]
+---
+
+# [VİDEO BAŞLIĞI]
+
+## [BÖLÜM ADI] (0:00)
+
+[Senaryo metni...]
+
+---
+
+## METADATA
+**Ana Kelime:** [keyword]
+**İlk 200 karakter açıklama:** [...]
+**Tagler:** [8 tag]
+**Thumbnail metni:** [3 kelime maks]
+```
+
+---
+
+## SENARYO KONTROL LİSTESİ
+- [ ] İlk cümle hook mu? (intro yok)
+- [ ] "You" kullanımı var mı?
+- [ ] 5+ spesifik sayı var mı?
+- [ ] "Furthermore/Additionally/Moreover" YOK mu?
+- [ ] Her bölüm sonu çekiyor mu?
+- [ ] Hayvan özne mi en az %40 paragrafta?
+- [ ] Karşı anlatı ilk 2 dk'da mı?
+- [ ] Kelime sayısı doğru aralıkta mı?
