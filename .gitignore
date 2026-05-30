@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+.env
+
+# MoneyPrinterTurbo - üretilen içerik ve cache
+MoneyPrinterTurbo/storage/
+MoneyPrinterTurbo/config.toml
+
+# Büyük medya dosyaları
+*.mp4
+*.mp3
+*.wav
+*.mov
+
+# OS
+.DS_Store
+Thumbs.db
