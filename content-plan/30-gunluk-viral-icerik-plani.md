@@ -67,6 +67,30 @@ En iyi performanslar 19:00–22:00 TR yüklemeleri. Sürdür.
 
 Kural: İzleyicin **kurban değil, avcı** olmak istiyor. Başlık her zaman "sen kazanırsın / sen yönetirsin / sen görürsün" demeli; "sana bunu yapıyorlar, dikkat et" değil.
 
+### KONU DNA'SI — izleyicin neyi TIKLIYOR, neyi TIKLAMIYOR
+
+Tüm videoların konu bazında ikiye ayrılıyor; ayrım çok net:
+
+**✅ TIKLANAN: DIŞA dönük sosyal güç** (özne: diğer insanlar + senin onlar üzerindeki etkin)
+| Konu kategorisi | Kanıt |
+|---|---|
+| Başkalarını yönetme/etkileme | Kukla 54K · Hayır Diyemez 65K · Söyletme 14K |
+| Başkalarını okuma/çözme | 5 Saniyede Okuma 21K · Yasak Test (yeni, 17-21 VPH ile ort. üstü) |
+| Statü/değer → insanların davranışı değişir | Ucuz Olma 11K+ · Yalvarma-Kovalama 5.7K |
+| Çekim/kovalatma | Gizli Güç Robert Greene 32K |
+| Sessiz güç (sosyal sonuçlu) | Tepki Verme-Greene 3.1K+ (ort. üstü VPH) |
+
+**❌ TIKLANMAYAN: İÇE dönük öz-analiz + mağdur çerçevesi** (özne: senin iç dünyan / sana yapılanlar)
+| Konu kategorisi | Kanıt |
+|---|---|
+| Öz-analiz / terapi dili (Jung gölge, bağlanma stili) | Gölge Benlik 528 · Kaçıngan Bağlanma 396 |
+| Felsefe/disiplin (içe dönük paket) | Aurelius Disiplin 766 |
+| Mağdur-savunma | Narsist İşaretleri 425 · Okunmaktan Korunma 717 |
+| Para psikolojisi | Paranın Peşinden Koşma 1.0K |
+| Belirsiz/soyut vaat | 23 Yasak Kural 1.3K · Neden Seni Geçiyorlar 1.7K |
+
+**Sonuç:** Konu ancak "bu bilgiyle başka insanlar karşısında anında avantaj kazanırsın" vaadi taşıyorsa tıklanıyor. Carl Jung, stoacılık, bağlanma, disiplin gibi konular ancak bir sosyal-güç paketinin İÇİNE gömülürse çalışır (ör. Kurt Zihniyeti'nin içinde disiplin anlatmak), tek başına başlık olamaz. Bu yüzden plandan Jung ve disiplin başlıkları çıkarıldı.
+
 ---
 
 ## 4. RAKİP VE BREAKOUT KANAL ANALİZİ
@@ -98,11 +122,24 @@ Robert Greene odaklı; senin konseptinin İngilizce kanıtı:
 - "After This Video, You'll Become a Genius… or an Absolute Monster | Machiavelli" — 82K
 - "7 Dark Life Lessons Society Doesn't Want You to Learn | Machiavelli" — 22x çarpan
 
-### Jung dalgası (çok dilli, şu an sıcak)
-- أسرار كارل يونغ (Arapça): 30 günde +151% izlenme
-- Carl Jung und das Wahre Selbst (Almanca): 30 günde +361% izlenme
-- TR arama hacmi: **"carl jung" 162.700/ay — nişinin EN BÜYÜK kelimesi** (motivasyon 102K, psikoloji 66K, sesli kitap 40.6K, stoacılık 36.8K, machiavelli 31.4K, marcus aurelius 17.3K)
-- Senin Jung videon 528'de kaldı çünkü soru kalıbıyla yayınlandı. İsim değil, paket hatalıydı. **En büyük açık fırsatın bu.**
+### Jung dalgası (çok dilli sıcak AMA senin izleyicine uymuyor)
+- Jung kanalları AR'de +151%, DE'de +361% büyüyor ve TR'de "carl jung" 162.7K aylık aramayla nişin en büyük kelimesi.
+- **ANCAK kanal verin iki kez tersini söylüyor:** Gölge Benlik 528, bağlanma stili 396. İzleyicin öz-analiz/terapi konusu tıklamıyor; senin kitlen sosyal-güç kitlesi. Jung ancak bir güç-paketi içinde malzeme olarak kullanılmalı (bölüm içi referans), başlık konusu olarak DEĞİL. Bu yüzden Jung fikri plandan çıkarıldı.
+
+### Son 3 ayda küçük kanallarda patlayan sosyal-güç konuları (vidIQ outlier taraması)
+Senin kazanan konu DNA'na birebir uyan, 200K altı abone kanallarda patlamış güncel konular:
+| Konu | Kanıt |
+|---|---|
+| "Saygısızlık etmekten korksunlar" | Human Chess 287K (40.6x, 2.948 VPH!) + Dark Psychology Hub 73K + Dark Realism 74K — 3 ayrı kanalda patladı |
+| "Seni görmezden geleni kovalamayı bırak" | Human Chess 41.7K (41.7x, 356 VPH — video 1 günlük!) |
+| "İnsanların seni kovalamasını sağlayan gizli beceri" | Storm Form 107K (41x) |
+| "İnsanların aklından çıkmamanın psikolojisi (az bulunurluk)" | Bold Fella 200K (20.4x) |
+| "İncinmeyi göze almayan tehlikeli olamaz" | Powindom 183K (93.8x) |
+| "Zahmetsiz çekimin gizli psikolojisi" | Reliq North 119K (203x) |
+| "Asla tepki verme, açıklama, görmezden gel" | Legacy Code 95.8K (273x) — sen zaten uyarladın ✓ |
+| "Hiçbir şeye ihtiyacın yokmuş gibi davran = güç" | Proper Lad 22.7K (63.5x) |
+| "Düşmanını zihinsel olarak alt et" | Dark Realism 52K |
+| "Kendini zeki sanan boş insanları tanıma" | Silent Psychology 83K (156x) |
 
 ### Kitap pazarı (Google/Reddit — insanların gerçekten satın aldığı)
 En çok önerilen/satılan karanlık psikoloji kitapları: *48 Laws of Power* (Greene), *Influence* (Cialdini), *In Sheep's Clothing* (George Simon — koyun postundaki manipülatörler), *Dangerous Personalities* (Joe Navarro), *Without Conscience* (Robert Hare). Audiobook trendleri 2026: disiplin, stoacılık (Ryan Holiday), "yeniden doğuş/reinvention", dopamin/odak.
@@ -131,11 +168,11 @@ Kurallar: 2 günde 1 video (gerçek tempon), 55–58 dk, 19:00–21:00 TR yükle
 - Potansiyel: ÇOK YÜKSEK
 
 ### GÜN 3
-**Carl Jung'un 12 Karanlık Yasası Kendini Bilen İnsanı Kimse Yönetemez | Sesli Kitap** (82 kr)
-- Kaynak kanıt: TR'de "carl jung" 162.7K aylık arama; Jung kanalları AR'de +151%, DE'de +361% patlamada. Kalıp, senin "Robert Greene'in 7 Karanlık Sırrı" yapının aynısı.
-- Hook: "Jung'a göre bilinçaltını bilinç düzeyine çıkarmazsan, o senin hayatını yönetir ve sen buna kader dersin."
-- Thumbnail: yarısı aydınlık yarısı gölgede bir yüz.
-- Potansiyel: ÇOK YÜKSEK (SEO + trend birleşimi)
+**7 Karanlık Kural Seni Önemsemeyeni Bırak O Seni Aramaya Başlasın | Sesli Kitap** (76 kr)
+- Kaynak kanıt: "Stop Chasing People Who Ignore You" Human Chess 41.7K (41.7x, 356 VPH) + "Hidden Skill That Makes People Chase You" Storm Form 107K. Konu şu an İngilizce pazarda en sıcak dalga.
+- Farkı: "Kovalamaya Zorlayan Gizli Güç" (32K) videonun devam bölümü gibi çalışır — o çekim inşası, bu geri çekilmenin gücü. En çok izlenen videonun izleyicisine birebir önerilir.
+- Hook: "Birini kovalamayı bıraktığın an iki şey olur: ya gider ya geri döner. İkisinde de kazanırsın."
+- Potansiyel: ÇOK YÜKSEK
 
 ### GÜN 5
 **9 Yasak Kural İnsanların Sana Saygısızlık Etmeye Korkmasının Sırrı | Sesli Kitap** (80 kr)
@@ -172,11 +209,12 @@ Kurallar: 2 günde 1 video (gerçek tempon), 55–58 dk, 19:00–21:00 TR yükle
 - Potansiyel: YÜKSEK
 
 ### GÜN 15
-**9 Karanlık Kural Kendini Disipline Zorlarsan Beynin Yeniden Programlanır | Sesli Kitap** (86 kr)
-- Kaynak kanıt: Arapça rakibin TÜM ZAMANLAR rekoru: 605K izlenme, 87x çarpan. Nişin en büyük evrensel konusu.
-- Not: Aurelius disiplin videon 766'da kaldı çünkü isim-odaklıydı. Bu başlık sonuç-odaklı.
-- Hook: "Motivasyon bir duygudur, gelir gider. Disiplin bir sistemdir; kurduğun an duyguya ihtiyacın kalmaz."
+**9 Yasak Teknik İnsanların Aklından Çıkmayan Kişi Olmanın Karanlık Sırrı | Sesli Kitap** (84 kr)
+- Kaynak kanıt: "The Psychology of Making People Think About You" (az bulunurluk = arzu) Bold Fella 200K (20.4x). Senin çekim/statü kategorinin tam merkezi.
+- Farkı: "Kovalamaya Zorlayan" davranışsal çekim; bu zihinsel iz bırakma — yokluğunda konuşulan insan olmak.
+- Hook: "İnsanlar seni gördüklerinde değil, göremediklerinde düşünmeye başlar. Az bulunan şey, değerli sanılır."
 - Potansiyel: ÇOK YÜKSEK
+- Not: Disiplin konusu (Arapça rakipte 605K) senin kanalında isim-paketle 766'da kalmıştı; bu konuyu ayrı video yapma — Kurt Zihniyeti'nin (Gün 1) içinde bölüm olarak anlat. İçe dönük konular ancak güç-paketinin içinde çalışıyor.
 
 ### GÜN 17
 **11 Yasak Yöntem Toksik İnsanı Fark Ettirmeden Etkisiz Bırakmanın Sırrı | Sesli Kitap** (84 kr)
@@ -198,10 +236,11 @@ Kurallar: 2 günde 1 video (gerçek tempon), 55–58 dk, 19:00–21:00 TR yükle
 - Potansiyel: ÇOK YÜKSEK
 
 ### GÜN 23
-**13 Yasak Strateji Savaşmadan Kazanmanın Karanlık Sırrı Sun Tzu | Sesli Kitap** (76 kr)
-- Kaynak kanıt: TR'de "art of war" 6.7K arama, kanalda yeni yazar markası, rakip Türkçe kanallarda boş.
-- Hook: "Sun Tzu'ya göre en büyük zafer, savaşılmadan kazanılandır. Ofiste, ilişkide, pazarlıkta da böyle."
-- Potansiyel: ORTA-YÜKSEK (yeni marka testi)
+**9 Karanlık Kural Biraz Tehlikeli Görünmeyen İnsan Asla Saygı Görmez | Sesli Kitap** (79 kr)
+- Kaynak kanıt: "Why You Must Be Willing to Get Hurt to Become Dangerous | Robert Greene" Powindom 183K (93.8x). Saygı + güç kategorinin en sert versiyonu.
+- Hook: "İyi insan olduğun için değil, zararsız olduğun için eziliyorsun. İkisi aynı şey değil."
+- İçerik: fazla uyumlu olmanın bedeli, öngörülemezlik, sınır ihlaline anında bedel, "nazik ama net" duruş. (Politika notu: şiddet değil, sosyal duruş anlatılır.)
+- Potansiyel: ÇOK YÜKSEK
 
 ### GÜN 25
 **7 Gizli Silah Sana Her Gün Evet Dedirten İknanın Karanlık Sırrı | Sesli Kitap** (77 kr)
@@ -225,11 +264,12 @@ Kurallar: 2 günde 1 video (gerçek tempon), 55–58 dk, 19:00–21:00 TR yükle
 - Potansiyel: YÜKSEK
 
 ### YEDEK / B PLANI (herhangi bir gün patinaj yaparsa)
+Hepsi kazanan konu DNA'sına (dışa dönük sosyal güç) uygun seçildi; içe dönük konular (Jung, Epiktetos/stoacılık, para) bilinçli olarak listede YOK:
 1. **7 Karanlık Baykuş Kuralı Karanlıkta Herkesten Fazla Görmenin Sırrı | Sesli Kitap** (79 kr — seri #4)
-2. **9 Karanlık Ders Bir Milyonerle İçtiğim Kahve Hayata Bakışımı Değiştirdi | Sesli Kitap** (85 kr — Arapça rakipte 99K hikâye formatı; para konusu kanalında zayıf olduğu için yedekte)
-3. **10 Yasak Yasa Kontrol Edemediğini Bırak Sarsılmaz Ol Epiktetos | Sesli Kitap** (75 kr — stoacılık 36.8K arama)
-4. **7 Karanlık İşaret İçten İçe Kötü Olan İnsanı Anında Tanımanın Sırrı | Sesli Kitap** (81 kr)
-5. **8 Yasak Avantaj Çözülemeyen İnsan Olmanın ve Asla Yönetilmemenin Sırrı | Sesli Kitap** (85 kr — "kapalı kutu" videonla ayrışması için çekim/güç çerçevesinde yaz)
+2. **10 Karanlık Kural Hiçbir Şeye İhtiyacın Yokmuş Gibi Davran Güç Sende Kalsın | Sesli Kitap** (86 kr — "Need Nothing = Power" Proper Lad 63.5x)
+3. **7 Yasak Oyun Rakibini Zihinsel Olarak Alt Etmenin Karanlık Sırrı | Sesli Kitap** (75 kr — "Outplay Your Enemies Mentally" Dark Realism 52K)
+4. **7 Karanlık İşaret İçten İçe Kötü Olan İnsanı Anında Tanımanın Sırrı | Sesli Kitap** (81 kr — okuma/çözme kategorisi)
+5. **13 Yasak Strateji Savaşmadan Kazanmanın Karanlık Sırrı Sun Tzu | Sesli Kitap** (76 kr — yeni yazar markası testi; ana listeden yedeğe alındı)
 
 ---
 
