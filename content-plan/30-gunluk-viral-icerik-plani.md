@@ -111,116 +111,125 @@ En çok önerilen/satılan karanlık psikoloji kitapları: *48 Laws of Power* (G
 
 ## 5. 30 GÜNLÜK VİRAL İÇERİK PLANI
 
-Kurallar: 2 günde 1 video (gerçek tempon), 55–58 dk, 19:00–21:00 TR yüklemesi, hepsi kanıtlı kalıplara oturtuldu, mevcut videolarınla konu çakışması yok. Sıralama stratejik: seri açılışları ve en yüksek potansiyeller trafiğin sıcak olduğu ilk 2 haftaya kondu.
+Kurallar: 2 günde 1 video (gerçek tempon), 55–58 dk, 19:00–21:00 TR yüklemesi, mevcut videolarınla konu çakışması yok.
+
+**BAŞLIK FORMÜLÜ (patlayan videolarından birebir çıkarıldı):**
+```
+[SAYI 7-21] + [Yasak Kural/Yasa/Yöntem | Karanlık Kural/Gerçek] + [vaat: güç fiili, 6-9 kelime] + [Sırrı / Karanlık Sırrı] + "| Sesli Kitap"
+```
+- Toplam uzunluk: **70–90 karakter / 11–14 kelime** (21 Yasak Yasa = 84, 15 Yasak Kural = 78 karakter)
+- Noktalama yok (iki nokta, soru işareti, tire kullanma — patlayanların hiçbirinde yok)
+- Özne her zaman izleyici, çerçeve her zaman kazanmak
+- Otorite ismi (Robert Greene, Machiavelli, Carl Jung) vaatten sonra, "| Sesli Kitap"tan önce
 
 ### GÜN 1 — SERİ AÇILIŞI 🐺
-**Kurt Zihniyeti: Tek Başına Güçlü Olmanın 11 Karanlık Kuralı | Sesli Kitap**
-- Kaynak kanıt: Arapça rakipte 95K izlenme / 22.8x / 113 VPH — son 2 ayın en güçlü formatı, Türkçede boş.
+**11 Karanlık Kurt Kuralı Tek Başınayken Bile Herkesten Güçlü Olmanın Sırrı | Sesli Kitap** (88 kr)
+- Kaynak kanıt: Arapça rakipte "Kurt Zihniyeti" 95K izlenme / 22.8x / 113 VPH — son 2 ayın en güçlü formatı, Türkçede boş.
 - Hook: "Kurt sürüden ayrıldığında zayıflamaz. Sürü, kurdu kaybettiğinde zayıflar."
 - İçerik: disiplin, sessizlik, yalnızlığı silaha çevirme, bölge savunması (sınır koyma), av sabrı.
-- Thumbnail: karanlıkta kurt silüeti + keskin sarı gözler. "HAYVAN ZİHNİYETİ #1" köşe rozeti koy — seriyi markala.
+- Thumbnail: karanlıkta kurt silüeti + keskin sarı gözler. "KURT ZİHNİYETİ" yazısı thumbnail'de — seri markası başlıkta değil görselde yaşasın.
 - Potansiyel: ÇOK YÜKSEK
 
 ### GÜN 3
-**Carl Jung'un 12 Yasak Dersi: Kendini Bilen İnsanı Kimse Yönetemez | Sesli Kitap**
-- Kaynat kanıt: TR'de "carl jung" 162.7K aylık arama; Jung kanalları AR'de +151%, DE'de +361% patlamada. Senin eski Jung videon (farklı kalıpla) 42.5K yapmıştı — isim kanalında çalışıyor.
+**Carl Jung'un 12 Karanlık Yasası Kendini Bilen İnsanı Kimse Yönetemez | Sesli Kitap** (82 kr)
+- Kaynak kanıt: TR'de "carl jung" 162.7K aylık arama; Jung kanalları AR'de +151%, DE'de +361% patlamada. Kalıp, senin "Robert Greene'in 7 Karanlık Sırrı" yapının aynısı.
 - Hook: "Jung'a göre bilinçaltını bilinç düzeyine çıkarmazsan, o senin hayatını yönetir ve sen buna kader dersin."
-- Thumbnail: yarısı aydınlık yarısı gölgede bir yüz. Soru değil, iddia.
+- Thumbnail: yarısı aydınlık yarısı gölgede bir yüz.
 - Potansiyel: ÇOK YÜKSEK (SEO + trend birleşimi)
 
 ### GÜN 5
-**İnsanların Sana Saygısızlık Etmeye Korkmasını Sağlayan 9 Karanlık Kural | Sesli Kitap**
+**9 Yasak Kural İnsanların Sana Saygısızlık Etmeye Korkmasının Sırrı | Sesli Kitap** (80 kr)
 - Kaynak kanıt: Dark Realism "How to Make People Fear Disrespecting You" 74K + "Respect Instantly" 58K.
 - Hook: "Saygı istenmez. Saygı, bedeli olduğunu bilen insana kendiliğinden verilir."
 - Not: "Küçümseyeni ezme" videonla farkı: o tek kişiye tepki, bu genel duruş/aura inşası.
 - Potansiyel: YÜKSEK
 
 ### GÜN 7
-**Kimse Senin Dostun Değil: Sadakat Beklemeyi Bıraktığın An Kazanırsın | Robert Greene | Sesli Kitap**
-- Kaynak kanıt: Dark Realism 37K; Greene ismi kanalında kanıtlı çarpan.
+**Kimse Senin Dostun Değil Sadakat Bekleyen Kaybeder Robert Greene | Sesli Kitap** (77 kr)
+- Kaynak kanıt: Dark Realism 37K; Greene ismi kanalında kanıtlı çarpan. Kalıp "Asla Tepki Verme..." (3.1K→devam ediyor) ve "Gizli Güç | Robert Greene" (32K) yapısının aynısı.
 - Hook: "Greene'in ilk yasası neden 'Efendinden asla daha parlak görünme'? Çünkü en yakınındaki, en çok kaybedeceğin kişidir."
 - Not: "Kıskanan dostlar" videonla farkı: o tespit/işaret listesi, bu beklenti yönetimi ve güç felsefesi.
 - Potansiyel: YÜKSEK
 
 ### GÜN 9 — SERİ #2 🦁
-**Aslan Zihniyeti: Saygıyı Dilenmeyen, Alan İnsanın 9 Karanlık Prensibi | Sesli Kitap**
+**9 Karanlık Aslan Kuralı Saygıyı Dilenmeden Almanın ve Kaybetmemenin Sırrı | Sesli Kitap** (88 kr)
 - Seri devamı — Gün 1 tutarsa bu video onun izlenmesini ikiye katlar (rakipte seri videoları birbirini besledi).
 - Hook: "Aslan kükremek zorunda değil. Varlığı yeter. Sen neden hâlâ kendini kanıtlamaya çalışıyorsun?"
-- Thumbnail: aynı görsel dil, "HAYVAN ZİHNİYETİ #2".
+- Thumbnail: aynı görsel dil, "ASLAN ZİHNİYETİ" rozeti.
 - Potansiyel: YÜKSEK
 
 ### GÜN 11
-**Koyun Postundaki Kurtlar: İyi Görünen İnsanların 8 Gizli Oyunu ve Karşı Hamlesi | Sesli Kitap**
-- Kaynak kanıt: George Simon "In Sheep's Clothing" — Google/Reddit'te nişin en çok satan kitabı; kanalda işlenmemiş.
-- DİKKAT: Mağdur çerçevesine düşme. Başlıktaki vaat "karşı hamle" — izleyici avcı konumunda.
+**8 Yasak İşaret İyi Görünen İnsanın Gizli Oyununu Anında Çözmenin Sırrı | Sesli Kitap** (85 kr)
+- Kaynak kanıt: George Simon "In Sheep's Clothing" — Google/Reddit'te nişin en çok satan kitabı; kanalda işlenmemiş. Kalıp "9 Yasak Test İnsanların Gerçek Yüzünü Anında Ortaya Çıkarır" (1.6K, 17 VPH ile yükseliyor) yapısının güçlendirilmişi.
+- DİKKAT: Mağdur çerçevesine düşme — izleyici avcı konumunda, "çözen" o.
 - Hook: "En tehlikeli manipülatör, kötü görünen değil; herkesin 'çok iyi insan' dediğidir."
 - Potansiyel: YÜKSEK
 
 ### GÜN 13
-**Machiavelli'nin 13 Karanlık Gerçeği: Fazla İyi Olmak Seni Zayıf Yapar | Sesli Kitap**
+**13 Yasak Kural Fazla İyi Olmayı Bırak Güçlü Ol Machiavelli | Sesli Kitap** (72 kr)
 - Kaynak kanıt: Mindwavey "Genius or Monster | Machiavelli" 82K; TR'de "machiavelli" 31.4K arama; senin Machiavelli videon iyi VPH ile gidiyor.
 - Hook: "Machiavelli insanlara kötü olmayı öğretmedi. İyiliğin nerede silah, nerede zaaf olduğunu öğretti."
 - Potansiyel: YÜKSEK
 
 ### GÜN 15
-**Kendini Disipline Zorlarsan Ne Olur? Beyni Yeniden Programlayan 9 Karanlık Kural | Sesli Kitap**
+**9 Karanlık Kural Kendini Disipline Zorlarsan Beynin Yeniden Programlanır | Sesli Kitap** (86 kr)
 - Kaynak kanıt: Arapça rakibin TÜM ZAMANLAR rekoru: 605K izlenme, 87x çarpan. Nişin en büyük evrensel konusu.
-- Not: Aurelius disiplin videon 766'da kaldı çünkü isim-odaklıydı. Bu başlık sonuç-odaklı: "ne olur?" merakı + sayı + kural.
+- Not: Aurelius disiplin videon 766'da kaldı çünkü isim-odaklıydı. Bu başlık sonuç-odaklı.
 - Hook: "Motivasyon bir duygudur, gelir gider. Disiplin bir sistemdir; kurduğun an duyguya ihtiyacın kalmaz."
 - Potansiyel: ÇOK YÜKSEK
 
 ### GÜN 17
-**Toksik İnsanları Enerjini Tüketmeden Etkisiz Bırakmanın 11 Yasak Yolu | Sesli Kitap**
-- Kaynak kanıt: Dark Realism "Smartest Way to Deal with Toxic People" 20K (yeni videoda 38 VPH).
+**11 Yasak Yöntem Toksik İnsanı Fark Ettirmeden Etkisiz Bırakmanın Sırrı | Sesli Kitap** (84 kr)
+- Kaynak kanıt: Dark Realism "Smartest Way to Deal with Toxic People" 20K (38 VPH). Kalıp "16 Yasak Yöntem Seni Küçümseyen İnsanı..." (5.5K, 3.8x) yapısının aynısı.
 - Hook: "Toksik insan seni tartışmada yenemez. Seni tartışmaya SOKARAK yener."
 - Farkı: "Görmezden gel" videon tepkisizlik felsefesi; bu pratik durum-durum taktik kitabı.
 - Potansiyel: ORTA-YÜKSEK
 
 ### GÜN 19 — SERİ #3 🦅
-**Kartal Zihniyeti: Yükseklerden Bakan İnsanın 8 Karanlık Görüş Kuralı | Sesli Kitap**
+**8 Karanlık Kartal Kuralı Herkesin Göremediğini Görmenin ve Önde Olmanın Sırrı | Sesli Kitap** (90 kr)
 - Seri devamı. Uzak görüş, detayda boğulmama, fırtınayı kanat gücüne çevirme, avını sessizce izleme.
 - Hook: "Kartal fırtınadan kaçmaz. Fırtınanın rüzgârını kullanıp daha yükseğe çıkar."
 - Potansiyel: YÜKSEK (seri momentumu)
 
 ### GÜN 21
-**Bu Sesli Kitap İnsanlara Bakışını Sonsuza Kadar Değiştirecek: İnsan Doğasının 10 Karanlık Gerçeği**
-- Kaynak kanıt: Arapça rakip "Bu Kitap İnsanlara Bakışını Değiştirir" 219K / 59x. Merak-boşluğu formatı: kitabın adı thumbnail'de/başlıkta YOK, izleyici öğrenmek için tıklıyor.
-- İçerik: Greene "İnsan Doğasının Yasaları" sentezi + kendi yorumun.
-- Potansiyel: ÇOK YÜKSEK (format kanalında hiç denenmedi, rakipte kanıtlı)
+**İnsan Doğasının 10 Karanlık Yasası Bunu Bilene Kimse Oyun Oynayamaz | Sesli Kitap** (80 kr)
+- Kaynak kanıt: Arapça rakip "Bu Kitap İnsanlara Bakışını Değiştirir" 219K / 59x. İçerik: Greene "İnsan Doğasının Yasaları" sentezi + kendi yorumun; kitabın adı içeride açıklanır, merak korunur.
+- Hook: "Bu on yasayı bilmeyen, hayatı boyunca bilenlerin tahtasında taş olur."
+- Potansiyel: ÇOK YÜKSEK
 
 ### GÜN 23
-**Savaşmadan Kazan: Sun Tzu'nun Günlük Hayat İçin 13 Yasak Stratejisi | Sesli Kitap**
+**13 Yasak Strateji Savaşmadan Kazanmanın Karanlık Sırrı Sun Tzu | Sesli Kitap** (76 kr)
 - Kaynak kanıt: TR'de "art of war" 6.7K arama, kanalda yeni yazar markası, rakip Türkçe kanallarda boş.
 - Hook: "Sun Tzu'ya göre en büyük zafer, savaşılmadan kazanılandır. Ofiste, ilişkide, pazarlıkta da böyle."
 - Potansiyel: ORTA-YÜKSEK (yeni marka testi)
 
 ### GÜN 25
-**Sana Her Gün 'Evet' Dedirten 7 Görünmez Silah: İkna Biliminin Karanlık Tarafı | Sesli Kitap**
+**7 Gizli Silah Sana Her Gün Evet Dedirten İknanın Karanlık Sırrı | Sesli Kitap** (77 kr)
 - Kaynak kanıt: Cialdini *Influence* — dünyanın en çok satan ikna kitabı, kanalda işlenmemiş.
 - Farkı: "9 Yasak Cümle" senin söyletmen; bu, SANA karşı her gün kullanılan silahları söküp kendi lehine çevirmen (reklam, satış, sosyal medya örnekleriyle).
 - Hook: "Bugün 'kendi kararın' sandığın en az 3 şey, başkasının sana kurduğu cümlenin sonucuydu."
 - Potansiyel: YÜKSEK
 
 ### GÜN 27
-**21 Gün Ortadan Kaybol: Kimsenin Tanıyamayacağı Birine Dönüşmenin Karanlık Planı | Sesli Kitap**
+**21 Günlük Yasak Plan Ortadan Kaybol ve Bambaşka Biri Olarak Geri Dön | Sesli Kitap** (82 kr)
 - Kaynak kanıt: Arapça rakip "Kelebek Zihniyeti: 21 gün sonra kendini tanıyamayacaksın" 67K / 29.8x + 2026 "reinvention" audiobook trendi.
 - Hook: "İnsanlar seni değiştirmene izin vermez. Çünkü senin eski hâlin, onların konfor alanıdır. Bu yüzden önce kaybolacaksın."
 - İçerik: sosyal geri çekilme, sessiz inşa, dönüş stratejisi (monk mode'un karanlık versiyonu).
 - Potansiyel: ÇOK YÜKSEK
 
 ### GÜN 29
-**Az Konuş, Ağır Bas: Sözü Silaha Çeviren 10 Yasak Konuşma Kuralı | Sesli Kitap**
+**10 Yasak Kural Az Konuş Ağır Bas Sözü Silaha Çevirmenin Karanlık Sırrı | Sesli Kitap** (84 kr)
 - Kaynak kanıt: Greene 4. Yasa ("Her zaman gereğinden az konuş") + kanalındaki tüm "sessizlik" temalı videoların ortalama üstü performansı.
 - Farkı: "9 Yasak Cümle" ne söyleyeceğin; bu ne zaman ve ne kadar söyleyeceğin.
 - Hook: "Gücünü kaybettiğin an, kendini açıklamaya başladığın andır. Çok konuşan, çok şey borçlanır."
 - Potansiyel: YÜKSEK
 
 ### YEDEK / B PLANI (herhangi bir gün patinaj yaparsa)
-1. **Baykuş Zihniyeti: Karanlıkta Herkesten Fazla Gören İnsanın 7 Kuralı** (seri #4)
-2. **Milyonerle Bir Kahve: Hayatımı Değiştiren 50 Dakikalık Konuşma** (Arapça rakipte 99K — hikâye formatı testi; para konusu kanalında zayıf olduğu için yedekte)
-3. **Epiktetos'un 10 Sarsılmazlık Yasası: Kontrol Edemediğini Bırak, Kontrol Edeni Yönet** (stoacılık 36.8K arama)
-4. **İçindeki Kötüyü Ele Veren 7 Davranış: Şeytan Ayrıntıda Değil, Alışkanlıkta Gizlidir** (Dark Psychology 11K)
-5. **Gizemli Olmanın 8 Karanlık Avantajı: Çözülemeyen İnsan Yönetilemez** ("Stay Mysterious" 26K — "kapalı kutu" videonla ayrışması için çekim/güç çerçevesinde yaz)
+1. **7 Karanlık Baykuş Kuralı Karanlıkta Herkesten Fazla Görmenin Sırrı | Sesli Kitap** (79 kr — seri #4)
+2. **9 Karanlık Ders Bir Milyonerle İçtiğim Kahve Hayata Bakışımı Değiştirdi | Sesli Kitap** (85 kr — Arapça rakipte 99K hikâye formatı; para konusu kanalında zayıf olduğu için yedekte)
+3. **10 Yasak Yasa Kontrol Edemediğini Bırak Sarsılmaz Ol Epiktetos | Sesli Kitap** (75 kr — stoacılık 36.8K arama)
+4. **7 Karanlık İşaret İçten İçe Kötü Olan İnsanı Anında Tanımanın Sırrı | Sesli Kitap** (81 kr)
+5. **8 Yasak Avantaj Çözülemeyen İnsan Olmanın ve Asla Yönetilmemenin Sırrı | Sesli Kitap** (85 kr — "kapalı kutu" videonla ayrışması için çekim/güç çerçevesinde yaz)
 
 ---
 
