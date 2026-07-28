@@ -162,3 +162,69 @@ green leather with the gold frame, reserved for typography added later.`
 Bir ve iki başlığın birebir karşılığı, önce bunları üret.
 Üç güçlü alternatif, kalabalık ile figür arasındaki mesafeyi en net gösteren.
 Dört ve beş seri içindeki diğer videolar için sakla.
+
+---
+
+## RAKİP BULGULARI UYGULANMIŞ SÜRÜM
+
+Yukarıdaki beş varyant senin mevcut kimliğini birebir koruyor. Aşağıdaki iki
+prompt ise rakiplerinden çıkardığım iki bulguyu ekliyor. Fark şu.
+
+**Bir. Sağ taraf karartıldı.** Kitabın olduğu sol tarafta turuncu tam canlı
+kalıyor, sağa doğru koyu yanık tona iniyor. Rakiplerinin garanti kontrast
+yöntemi bu. Bu varyantta yazın siyah değil krem beyaz olmalı, tek kelime sarı.
+Siyah yazı koyu zeminde kaybolur.
+
+**İki. Kapak resmi sadeleştirildi.** Kalabalık artık onlarca ayrı figür değil,
+tek bir karanlık kütle. Prompta üç dört büyük şekil sınırı ve ince detay yasağı
+eklendi. Rakiplerin kapaklarında tek bir ikon var, sebebi küçük ekranda
+çözünürlük.
+
+**Üç. Format etiketi.** Rakiplerin üçünde de sağ üstte AudioBook yazıyor.
+Bunu görsele değil, sonradan eklediğin katmana koy: sağ üste seyrek harf
+aralıklı küçük **SESLİ KİTAP**.
+
+Açıyı on beş derecede bıraktım. Rakiplerin kitapları neredeyse tam cepheden
+ama sen on beş istedin ve on beş derece hâlâ okunur bir açı, orada sorun yok.
+
+### A. Karartılmış — uzaklaşan figür ve gölge kütlesi
+
+```
+A photorealistic 3D render of a premium hardcover book, studio product photography style, sharp focus, high detail, landscape 16:9 format (1280x720). The book stands upright filling nearly the full height of the frame, slightly bleeding past the top and bottom edges, angled about 15 degrees inward to the left in three-quarter perspective with the spine visible on the left. Camera is at near eye-level, straight-on framing, not looking down. The book occupies the left 40-42% of the frame width, positioned flush left with minimal margin, leaving a large clean empty area on the right two-thirds of the image for bold text. A soft realistic drop shadow sits beneath the book. The background is a vivid warm orange-to-red gradient behind and around the book, hex D9611E falling to hex B8401A, and it deepens across the right side into a rich burnt shadow, hex 4A1608 near the right edge, forming a clean dark field where large bright text will be placed later. The transition from orange to the dark field is one wide smooth gradient, never a hard line, and the orange stays fully vivid on the book side. No other objects.
+
+The book cover is bound in aged emerald-green leather with a thin ornate tarnished-gold double-line border along the outer edge and small gold corner flourishes. Inside the border, a large illustration fills nearly the entire cover, leaving only a narrow strip of green leather visible around the gold frame. The leather shows a worn, slightly cracked texture in the margins and darkest shadow areas.
+
+The central illustration shows a dark, painterly, symbolic scene built from only three or four large simple shapes so that it stays instantly readable at small thumbnail size: one lone figure stands calm and upright at the center, seen from behind, walking away down a single broad band of warm golden light. Behind it, instead of separate people, a single dark reaching mass of shadow rises and leans after the figure like one wave, its top edge broken into a few grasping silhouette shapes, all of it held in cold blue-grey. A warm golden aura outlines only the lone figure. Avoid fine detail, avoid many small separate figures, keep the shapes bold and poster-like, extending almost to the edges of the gold border.
+
+Bold antique-gold serif text in the upper portion of the cover, centered, three uppercase lines, strong dark drop shadow, subtle gold-leaf shine: "SEN KOVALAMA" / "HERKES SENİ" / "KOVALASIN". Bold bone-white serif text at the bottom of the cover, centered, uppercase, dark shadow: "15 YASAK KURAL".
+
+The spine on the left shows vertical bold tarnished-gold serif text: "15 YASAK KURAL - SENİ KOVALATMANIN SIRRI".
+
+Lighting: cold blue-grey ambient tone across the shadow mass, warm intense gold light radiating only from the lone figure and the light band under its feet, deep emerald-green undertone throughout the leather. Overall style: photorealistic 3D book render, one large bold dark-psychology illustration, thin gold edge frame, green-and-gold palette engineered for maximum contrast against the warm orange thumbnail background, with the right side darkened for text legibility. Landscape 16:9, high resolution.
+```
+
+### B. Karartılmış — göğsü yanan figür ve uzanan iki kütle
+
+```
+A photorealistic 3D render of a premium hardcover book, studio product photography style, sharp focus, high detail, landscape 16:9 format (1280x720). The book stands upright filling nearly the full height of the frame, slightly bleeding past the top and bottom edges, angled about 15 degrees inward to the left in three-quarter perspective with the spine visible on the left. Camera is at near eye-level, straight-on framing, not looking down. The book occupies the left 40-42% of the frame width, positioned flush left with minimal margin, leaving a large clean empty area on the right two-thirds of the image for bold text. A soft realistic drop shadow sits beneath the book. The background is a vivid warm orange-to-red gradient behind and around the book, hex D9611E falling to hex B8401A, and it deepens across the right side into a rich burnt shadow, hex 4A1608 near the right edge, forming a clean dark field where large bright text will be placed later. The transition from orange to the dark field is one wide smooth gradient, never a hard line, and the orange stays fully vivid on the book side. No other objects.
+
+The book cover is bound in aged emerald-green leather with a thin ornate tarnished-gold double-line border along the outer edge and small gold corner flourishes. Inside the border, a large illustration fills nearly the entire cover, leaving only a narrow strip of green leather visible around the gold frame. The leather shows a worn, slightly cracked texture in the margins and darkest shadow areas.
+
+The central illustration shows a dark, painterly, symbolic scene built from only three or four large simple shapes so that it stays instantly readable at small thumbnail size: one lone figure stands calm and upright at the center, face turned slightly away, a warm golden light burning inside its chest. From the left and right edges, two large dark shapes of reaching arms sweep inward through cold blue-grey gloom and stop at a faint glowing boundary just short of the figure. Only three main shapes in total: the figure, and the two reaching masses. Avoid fine detail, avoid many small separate figures, keep the shapes bold and poster-like, extending almost to the edges of the gold border.
+
+Bold antique-gold serif text in the upper portion of the cover, centered, three uppercase lines, strong dark drop shadow, subtle gold-leaf shine: "KİMSEYİ KOVALAMA" / "DEĞERİNİ İNŞA ET" / "SANA GELSİNLER". Bold bone-white serif text at the bottom of the cover, centered, uppercase, dark shadow: "15 YASAK KURAL".
+
+The spine on the left shows vertical bold tarnished-gold serif text: "15 YASAK KURAL - SENİ KOVALATMANIN SIRRI".
+
+Lighting: cold blue-grey ambient tone across the reaching shapes, warm intense gold light radiating outward from the figure's chest and along the boundary line, deep emerald-green undertone throughout the leather. Overall style: photorealistic 3D book render, one large bold dark-psychology illustration, thin gold edge frame, green-and-gold palette engineered for maximum contrast against the warm orange thumbnail background, with the right side darkened for text legibility. Landscape 16:9, high resolution.
+```
+
+---
+
+## NASIL TEST EDERSİN
+
+Yukarıdaki bir numaralı varyant ile buradaki A varyantı aynı sahne, tek fark
+karartma ve sadeleştirme. İkisini iki ayrı videoda kullan ve ilk yirmi dört
+saatteki tıklanma oranlarını karşılaştır.
+
+Kazanan hangisiyse onu altı ay boyunca sistem yap.
