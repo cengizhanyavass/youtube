@@ -1,0 +1,43 @@
+{
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "voice": "tr-TR-AhmetNeural",
+  "rate": "+8%",
+  "style": {
+    "bg": "#0e1116",
+    "ink": "#f2f4f8",
+    "accent": "#ffcc33",
+    "ground": "#2a3040"
+  },
+  "scenes": [
+    {
+      "title": "STICKMAN PIPELINE",
+      "say": "Bu video tamamen kodla uretildi. Ne cizim programi ne de abonelik gerekti.",
+      "actors": [
+        { "action": "wave", "x": 0.5, "bubble": "Selam!", "cycles": 3 }
+      ]
+    },
+    {
+      "say": "Once rakipleri tariyoruz, sonra nisi seciyoruz, en son videoyu basiyoruz.",
+      "actors": [
+        { "action": "point_right", "x": 0.32, "label": "sen" },
+        { "action": "idle", "x": 0.68, "color": "#5ad1ff", "flip": true, "cycles": 2 }
+      ]
+    },
+    {
+      "say": "Her sahne bir JSON satiri. Aksiyonu degistir, video degissin.",
+      "actors": [
+        { "action": "walk", "x": 0.45, "cycles": 4 }
+      ]
+    },
+    {
+      "title": "HAZIR",
+      "say": "Kanalinda kullanabilecegin sablon bu kadar basit.",
+      "duration": 4,
+      "actors": [
+        { "action": "cheer", "x": 0.5, "cycles": 3, "bubble": "Yayina hazir" }
+      ]
+    }
+  ]
+}
