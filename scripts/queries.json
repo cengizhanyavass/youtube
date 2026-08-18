@@ -1,0 +1,47 @@
+{
+  "_aciklama": "viral_scout.py icin cok dilli sorgu seti - 60+ konut/otonomi nisi. Kullanim: python tools/viral_scout.py --queries-file scripts/queries.json --max-subs 80000",
+  "es": [
+    "casa segura para personas mayores",
+    "adaptar el baño para mayores",
+    "prevenir caidas en casa mayores",
+    "vivienda para jubilados casa o piso",
+    "vender la casa y mudarse a un piso jubilacion",
+    "cosas que debes tirar despues de los 60",
+    "vivir solo despues de los 70",
+    "reformar la casa para la vejez",
+    "como eran las casas de antes",
+    "casas antiguas frescas sin aire acondicionado",
+    "por que las casas modernas son peores",
+    "cosas que habia en las casas de antes"
+  ],
+  "en": [
+    "aging in place home modifications",
+    "bathroom safety for seniors falls",
+    "downsizing after 60 house or apartment",
+    "things to get rid of after 60",
+    "single story house for retirement",
+    "how to make your home safe for elderly parents",
+    "living alone after 70"
+  ],
+  "pt": [
+    "casa segura para idosos",
+    "adaptar banheiro para idosos",
+    "prevenir quedas em casa idosos",
+    "morar sozinho depois dos 70"
+  ],
+  "de": [
+    "barrierefrei wohnen im alter",
+    "badezimmer altersgerecht umbauen",
+    "sturzprophylaxe zuhause senioren"
+  ],
+  "fr": [
+    "adapter son logement pour les seniors",
+    "prevenir les chutes a domicile personnes agees",
+    "vendre sa maison pour un appartement retraite"
+  ],
+  "it": [
+    "casa sicura per anziani",
+    "adattare il bagno per anziani",
+    "prevenire le cadute in casa anziani"
+  ]
+}
