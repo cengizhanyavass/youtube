@@ -1,0 +1,51 @@
+name: Daily travel video
+
+on:
+  schedule:
+    # Her gun 06:00 UTC (Turkiye saatiyle 09:00).
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: "Konu (bos birakilirsa gunun konusu kullanilir)"
+        required: false
+      voice:
+        description: "Edge TTS sesi"
+        required: false
+        default: en-US-AndrewNeural-Male
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # Runner'da ffmpeg hazir geliyor; setup.sh yine de yoksa kendi
+      # binary'sini baglar.
+      - name: MoneyPrinterTurbo kurulumu
+        env:
+          PEXELS_API_KEYS: ${{ secrets.PEXELS_API_KEYS }}
+          PIXABAY_API_KEYS: ${{ secrets.PIXABAY_API_KEYS }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          MOONSHOT_API_KEY: ${{ secrets.MOONSHOT_API_KEY }}
+        run: ./scripts/setup.sh
+
+      - name: Videoyu uret
+        run: |
+          ./scripts/daily_video.py \
+            ${{ inputs.topic && format('--topic "{0}"', inputs.topic) || '' }} \
+            --voice "${{ inputs.voice || 'en-US-AndrewNeural-Male' }}"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: travel-video-${{ github.run_number }}
+          path: output/*.mp4
+          retention-days: 30
